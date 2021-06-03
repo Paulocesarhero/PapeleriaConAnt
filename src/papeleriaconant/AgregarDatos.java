@@ -15,38 +15,39 @@ public class AgregarDatos extends javax.swing.JInternalFrame {
     ArrayList<Producto> listaProductos = new ArrayList<Producto>();
     int definiendoConstructor;
     int colSeleccionada;
+    private String ruta;
+
+    public String getRuta() {
+        return ruta;
+    }
+
+    public void setRuta(String ruta) {
+        this.ruta = ruta;
+    }
 
     /**
      * Creates new form AgregarDetos
      */
-    public AgregarDatos() {
+
+    public AgregarDatos(){
+        initComponents();
+        definiendoConstructor = 1;
+    }
+    public AgregarDatos(String rutaDelMain) {
+        ruta = rutaDelMain;
         definiendoConstructor = 1;
         initComponents();
     }
 
-    //constructor para eliminar datos
-    public AgregarDatos(int indiceDelaColumnaSeleccionada) {
+    //constructor para modificar datos
+    public AgregarDatos(int indiceDelaColumnaSeleccionada,String rutaDelMain) {
+        initComponents();
         colSeleccionada = indiceDelaColumnaSeleccionada;
+        ruta = rutaDelMain;
         definiendoConstructor = 0;
-//        this.setVisible(true);
-//        initComponents();
-//
-//        String catalogo = listaProductos.get(indiceDelaColumnaSeleccionada).getNombreDelCatalogo();
-//        String id = listaProductos.get(indiceDelaColumnaSeleccionada).getIdProducto();
-//        String nombreDelProducto = listaProductos.get(indiceDelaColumnaSeleccionada).getNombreDelProducto();
-//        String descripcioncion = listaProductos.get(indiceDelaColumnaSeleccionada).getDescripcion();
-//        int cantidad = listaProductos.get(indiceDelaColumnaSeleccionada).getCantidad();
-//        double precioUnitarionitario = listaProductos.get(indiceDelaColumnaSeleccionada).getPrecioUnitario();
-//        vaciamos el indice seleccionado en el formulario
         this.repaint();
         this.setResizable(true);
 
-//        catalogoTxt.setText("Artes");
-//        idTxt.setText(id);
-//        nombreTxt.setText(nombreDelProducto);
-//        descripcionTxt.setText(descripcioncion);
-//        cantidadTxt.setText(String.valueOf(cantidad));
-//        precioUnitarioTxt.setText(String.valueOf(precioUnitarionitario));
 
 
 
@@ -86,7 +87,6 @@ public class AgregarDatos extends javax.swing.JInternalFrame {
         double precioUnitario = getDoublePrecioUnitario();
         Producto product = new Producto(catalogo, nombreDelProducto, id, descripcion, cantidad, precioUnitario);
         listaProductos.add(product);
-        System.out.println("Entre al indice incorrecto");
     }
 
     private void llenarLista(int indiceDeLaLista) {
@@ -107,8 +107,7 @@ public class AgregarDatos extends javax.swing.JInternalFrame {
     private void leerlista() {
         try {
             ObjectInputStream leyendoFichero = new ObjectInputStream(
-                    new FileInputStream("data/Productos.obj"));
-//            Producto objProductoLeido = (Producto) objInput.readObject();
+                    new FileInputStream(ruta));
             listaProductos = (ArrayList<Producto>) leyendoFichero.readObject();
             leyendoFichero.close();
         } catch (FileNotFoundException e) {
@@ -123,8 +122,9 @@ public class AgregarDatos extends javax.swing.JInternalFrame {
     //escribe el fichero con los datos que estan en la lista
     private void outProductos() {
         try {
+            System.out.println("Esta es la ruta"+ruta);
             ObjectOutputStream escribiendoFichero = new ObjectOutputStream(
-                    new FileOutputStream("data/Productos.obj"));
+                    new FileOutputStream(ruta));
             escribiendoFichero.writeObject(listaProductos);
             escribiendoFichero.close();
 
@@ -249,15 +249,15 @@ public class AgregarDatos extends javax.swing.JInternalFrame {
 
     private void agregarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarBtnActionPerformed
         if (definiendoConstructor == 0) {
-            System.out.println("Entre a este if");
             leerlista();
             llenarLista(colSeleccionada);
             outProductos();
+            this.setVisible(false);
         } else {
-            System.out.println("Entre al otro if");
             leerlista();
             llenarLista();
             outProductos();
+            this.setVisible(false);
         }
 //      this.setVisible(false);
     }//GEN-LAST:event_agregarBtnActionPerformed

@@ -17,6 +17,7 @@ import javax.swing.table.DefaultTableModel;
 public class Main extends javax.swing.JFrame {
     DefaultTableModel modelo = new DefaultTableModel();
     public ArrayList<Producto> listaProductos;
+    String ruta;
     AgregarDatos aD = new AgregarDatos();
 
 
@@ -27,8 +28,8 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         setModelo();
-        leerlista();
-        setDatos();
+//        leerlista();
+//        setDatos();
     }
 
     private void setModelo() {
@@ -41,7 +42,7 @@ public class Main extends javax.swing.JFrame {
     private void escribirLista() {
         try {
             ObjectOutputStream escribiendoFichero = new ObjectOutputStream(
-                    new FileOutputStream("data/Productos.obj"));
+                    new FileOutputStream(ruta));
             escribiendoFichero.writeObject(listaProductos);
             escribiendoFichero.close();
 
@@ -57,8 +58,8 @@ public class Main extends javax.swing.JFrame {
     private void leerlista() {
         try {
             ObjectInputStream leyendoFichero = new ObjectInputStream(
-                    new FileInputStream("data/Productos.obj"));
-//            Producto objProductoLeido = (Producto) objInput.readObject();
+                    new FileInputStream(ruta));
+//
             listaProductos = (ArrayList<Producto>) leyendoFichero.readObject();
             leyendoFichero.close();
         } catch (FileNotFoundException e) {
@@ -108,11 +109,11 @@ public class Main extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         arteBtn = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
+        papelesBtn = new javax.swing.JMenuItem();
+        escrituraBtb = new javax.swing.JMenuItem();
+        regalosBtn = new javax.swing.JMenuItem();
+        adhesivosBtn = new javax.swing.JMenuItem();
+        generalesBtn = new javax.swing.JMenuItem();
 
         jMenuItem5.setText("jMenuItem5");
 
@@ -174,10 +175,10 @@ public class Main extends javax.swing.JFrame {
             .addGroup(artePanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(agregarDatosPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(artePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(artePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, artePanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(artePanelLayout.createSequentialGroup()
                         .addComponent(eliminarProductoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(modificarProductoBtn)
@@ -217,25 +218,45 @@ public class Main extends javax.swing.JFrame {
         });
         jMenu1.add(arteBtn);
 
-        jMenuItem3.setText("Papeles");
-        jMenu1.add(jMenuItem3);
-
-        jMenuItem2.setText("Escritura");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        papelesBtn.setText("Papeles");
+        papelesBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                papelesBtnActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        jMenu1.add(papelesBtn);
 
-        jMenuItem6.setText("Regalos");
-        jMenu1.add(jMenuItem6);
+        escrituraBtb.setText("Escritura");
+        escrituraBtb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                escrituraBtbActionPerformed(evt);
+            }
+        });
+        jMenu1.add(escrituraBtb);
 
-        jMenuItem7.setText("Adeshivos");
-        jMenu1.add(jMenuItem7);
+        regalosBtn.setText("Regalos");
+        regalosBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regalosBtnActionPerformed(evt);
+            }
+        });
+        jMenu1.add(regalosBtn);
 
-        jMenuItem8.setText("Generales");
-        jMenu1.add(jMenuItem8);
+        adhesivosBtn.setText("Adeshivos");
+        adhesivosBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adhesivosBtnActionPerformed(evt);
+            }
+        });
+        jMenu1.add(adhesivosBtn);
+
+        generalesBtn.setText("Generales");
+        generalesBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                generalesBtnActionPerformed(evt);
+            }
+        });
+        jMenu1.add(generalesBtn);
 
         jMenuBar1.add(jMenu1);
 
@@ -257,11 +278,15 @@ public class Main extends javax.swing.JFrame {
 
     private void arteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arteBtnActionPerformed
         // TODO add your handling code here:
+        ruta = "data/artesProductos.obj";
+        aD.setRuta(ruta);
     }//GEN-LAST:event_arteBtnActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void escrituraBtbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_escrituraBtbActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+        ruta = "data/escrituraProductos.obj";
+        aD.setRuta(ruta);
+    }//GEN-LAST:event_escrituraBtbActionPerformed
 
     private void agregarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarBtnActionPerformed
         // TODO add your handling code here:
@@ -294,11 +319,35 @@ public class Main extends javax.swing.JFrame {
 
     }//GEN-LAST:event_eliminarProductoBtnActionPerformed
 
+    private void papelesBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_papelesBtnActionPerformed
+        // TODO add your handling code here:
+        ruta = "data/papelesProductos.obj";
+        aD.setRuta(ruta);
+    }//GEN-LAST:event_papelesBtnActionPerformed
+
+    private void regalosBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regalosBtnActionPerformed
+        // TODO add your handling code here:
+        ruta="data/regalosProductos.obj";
+        aD.setRuta(ruta);
+    }//GEN-LAST:event_regalosBtnActionPerformed
+
+    private void adhesivosBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adhesivosBtnActionPerformed
+        // TODO add your handling code here:
+        ruta="data/adhesivosProductos.obj";
+        aD.setRuta(ruta);
+    }//GEN-LAST:event_adhesivosBtnActionPerformed
+
+    private void generalesBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generalesBtnActionPerformed
+        // TODO add your handling code here:
+        ruta="data/generalesProductos.obj";
+        aD.setRuta(ruta);
+    }//GEN-LAST:event_generalesBtnActionPerformed
+
     private void modificarProductoBtnActionPerformed(java.awt.event.ActionEvent evt) {                                                     
         // TODO add your handling code here:
         int filaSeleccionada = arteTbl.getSelectedRow();
         if (filaSeleccionada>=0){
-            AgregarDatos modificar = new AgregarDatos(filaSeleccionada);
+            AgregarDatos modificar = new AgregarDatos(filaSeleccionada,ruta);
             agregarDatosPanel.add(modificar);
             modificar.show();
         }else
@@ -347,22 +396,22 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem adhesivosBtn;
     private javax.swing.JButton agregarBtn;
     private javax.swing.JPanel agregarDatosPanel;
     private javax.swing.JMenuItem arteBtn;
     private javax.swing.JPanel artePanel;
     private javax.swing.JTable arteTbl;
     private javax.swing.JButton eliminarProductoBtn;
+    private javax.swing.JMenuItem escrituraBtb;
+    private javax.swing.JMenuItem generalesBtn;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton modificarProductoBtn;
+    private javax.swing.JMenuItem papelesBtn;
+    private javax.swing.JMenuItem regalosBtn;
     private javax.swing.JButton verProductosBtn;
     // End of variables declaration//GEN-END:variables
 }
