@@ -5,88 +5,18 @@
  */
 package papeleriaconant;
 
-import java.awt.event.ActionEvent;
-import java.io.*;
-import java.util.ArrayList;
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-
 /**
+ *
  * @author paulo
  */
 public class Main extends javax.swing.JFrame {
-    DefaultTableModel modelo = new DefaultTableModel();
-    public ArrayList<Producto> listaProductos;
-    String ruta;
-    AgregarDatos aD = new AgregarDatos();
-
-
 
     /**
      * Creates new form Main
      */
     public Main() {
         initComponents();
-        setModelo();
-//        leerlista();
-//        setDatos();
     }
-
-    private void setModelo() {
-        String[] cabecera = {"Id", "Nombre", "Descripcion", "Piezas", "Precio Unitario",};
-        modelo.setColumnIdentifiers(cabecera);
-        arteTbl.setModel(modelo);
-
-    }
-
-    private void escribirLista() {
-        try {
-            ObjectOutputStream escribiendoFichero = new ObjectOutputStream(
-                    new FileOutputStream(ruta));
-            escribiendoFichero.writeObject(listaProductos);
-            escribiendoFichero.close();
-
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-
-        }
-
-    }
-
-//    Aqui recibe lo que tenga el archivo y lo mete a una listaProductos
-    private void leerlista() {
-        try {
-            ObjectInputStream leyendoFichero = new ObjectInputStream(
-                    new FileInputStream(ruta));
-//
-            listaProductos = (ArrayList<Producto>) leyendoFichero.readObject();
-            leyendoFichero.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-
-//    vaciamos los datos de la lista en la tabla
-    private void setDatos() {
-        Object[] datos = new Object[modelo.getColumnCount()];
-        modelo.setRowCount(0);
-        for (Producto theprod : listaProductos) {
-            datos[0] = theprod.getIdProducto();
-            datos[1] = theprod.getNombreDelProducto();
-            datos[2] = theprod.getDescripcion();
-            datos[3] = theprod.getCantidad();
-            datos[4] = theprod.getPrecioUnitario();
-            modelo.addRow(datos);
-        }
-        arteTbl.setModel(modelo);
-
-    }
-
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -97,263 +27,98 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuItem5 = new javax.swing.JMenuItem();
-        artePanel = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        arteTbl = new javax.swing.JTable();
-        agregarBtn = new javax.swing.JButton();
-        agregarDatosPanel = new javax.swing.JPanel();
-        verProductosBtn = new javax.swing.JButton();
-        eliminarProductoBtn = new javax.swing.JButton();
-        modificarProductoBtn = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        arteBtn = new javax.swing.JMenuItem();
-        papelesBtn = new javax.swing.JMenuItem();
-        escrituraBtb = new javax.swing.JMenuItem();
-        regalosBtn = new javax.swing.JMenuItem();
-        adhesivosBtn = new javax.swing.JMenuItem();
-        generalesBtn = new javax.swing.JMenuItem();
-
-        jMenuItem5.setText("jMenuItem5");
+        catalogosBtn = new javax.swing.JButton();
+        ventasBtn = new javax.swing.JButton();
+        usuariosBtn = new javax.swing.JButton();
+        reporteDeVentasBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        arteTbl.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-
-            }
-        ));
-        jScrollPane1.setViewportView(arteTbl);
-
-        agregarBtn.setText("AgregarProducto");
-        agregarBtn.addActionListener(new java.awt.event.ActionListener() {
+        catalogosBtn.setText("Catalogos");
+        catalogosBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                agregarBtnActionPerformed(evt);
+                catalogosBtnActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout agregarDatosPanelLayout = new javax.swing.GroupLayout(agregarDatosPanel);
-        agregarDatosPanel.setLayout(agregarDatosPanelLayout);
-        agregarDatosPanelLayout.setHorizontalGroup(
-            agregarDatosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 477, Short.MAX_VALUE)
-        );
-        agregarDatosPanelLayout.setVerticalGroup(
-            agregarDatosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        verProductosBtn.setText("Ver Productos");
-        verProductosBtn.addActionListener(new java.awt.event.ActionListener() {
+        ventasBtn.setText("Ventas");
+        ventasBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                verProductosBtnActionPerformed(evt);
+                ventasBtnActionPerformed(evt);
             }
         });
 
-        eliminarProductoBtn.setText("Eliminar un producto");
-        eliminarProductoBtn.addActionListener(new java.awt.event.ActionListener() {
+        usuariosBtn.setText("Usuarios");
+        usuariosBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                eliminarProductoBtnActionPerformed(evt);
+                usuariosBtnActionPerformed(evt);
             }
         });
 
-        modificarProductoBtn.setText("Modificar Producto");
-        modificarProductoBtn.addActionListener(new java.awt.event.ActionListener() {
+        reporteDeVentasBtn.setText("Reporte De ventas");
+        reporteDeVentasBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                modificarProductoBtnActionPerformed(evt);
+                reporteDeVentasBtnActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout artePanelLayout = new javax.swing.GroupLayout(artePanel);
-        artePanel.setLayout(artePanelLayout);
-        artePanelLayout.setHorizontalGroup(
-            artePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(artePanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(agregarDatosPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(artePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(artePanelLayout.createSequentialGroup()
-                        .addComponent(eliminarProductoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(modificarProductoBtn)
-                        .addGap(11, 11, 11)
-                        .addComponent(agregarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(12, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, artePanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(verProductosBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(169, 169, 169))
-        );
-        artePanelLayout.setVerticalGroup(
-            artePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(artePanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(artePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(agregarDatosPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(artePanelLayout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(68, 68, 68)
-                        .addGroup(artePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(agregarBtn)
-                            .addComponent(eliminarProductoBtn)
-                            .addComponent(modificarProductoBtn))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(verProductosBtn)
-                .addContainerGap(49, Short.MAX_VALUE))
-        );
-
-        jMenu1.setText("Catalogos");
-
-        arteBtn.setText("Arte");
-        arteBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                arteBtnActionPerformed(evt);
-            }
-        });
-        jMenu1.add(arteBtn);
-
-        papelesBtn.setText("Papeles");
-        papelesBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                papelesBtnActionPerformed(evt);
-            }
-        });
-        jMenu1.add(papelesBtn);
-
-        escrituraBtb.setText("Escritura");
-        escrituraBtb.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                escrituraBtbActionPerformed(evt);
-            }
-        });
-        jMenu1.add(escrituraBtb);
-
-        regalosBtn.setText("Regalos");
-        regalosBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                regalosBtnActionPerformed(evt);
-            }
-        });
-        jMenu1.add(regalosBtn);
-
-        adhesivosBtn.setText("Adeshivos");
-        adhesivosBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adhesivosBtnActionPerformed(evt);
-            }
-        });
-        jMenu1.add(adhesivosBtn);
-
-        generalesBtn.setText("Generales");
-        generalesBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                generalesBtnActionPerformed(evt);
-            }
-        });
-        jMenu1.add(generalesBtn);
-
-        jMenuBar1.add(jMenu1);
-
-        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(artePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(117, 117, 117)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(usuariosBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ventasBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(catalogosBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(reporteDeVentasBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(158, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(artePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(catalogosBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ventasBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(reporteDeVentasBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(usuariosBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void arteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arteBtnActionPerformed
+    private void catalogosBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_catalogosBtnActionPerformed
         // TODO add your handling code here:
-        ruta = "data/artesProductos.obj";
-        aD.setRuta(ruta);
-    }//GEN-LAST:event_arteBtnActionPerformed
+        this.setVisible(false);
+        Catalogos abrirCatalogo = new Catalogos();
+        abrirCatalogo.setLocationRelativeTo(null);
+        abrirCatalogo.setVisible(true);
+    }//GEN-LAST:event_catalogosBtnActionPerformed
 
-    private void escrituraBtbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_escrituraBtbActionPerformed
+    private void ventasBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ventasBtnActionPerformed
         // TODO add your handling code here:
-        ruta = "data/escrituraProductos.obj";
-        aD.setRuta(ruta);
-    }//GEN-LAST:event_escrituraBtbActionPerformed
+        this.setVisible(false);
+        VentasFrame abrirVentas = new VentasFrame();
+        abrirVentas.setLocationRelativeTo(null);
+        abrirVentas.setVisible(true);
+    }//GEN-LAST:event_ventasBtnActionPerformed
 
-    private void agregarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarBtnActionPerformed
+    private void reporteDeVentasBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reporteDeVentasBtnActionPerformed
         // TODO add your handling code here:
+    }//GEN-LAST:event_reporteDeVentasBtnActionPerformed
 
-        agregarDatosPanel.add(aD);
-        aD.show();
-
-    }//GEN-LAST:event_agregarBtnActionPerformed
-
-    private void verProductosBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verProductosBtnActionPerformed
-        leerlista();
-        setDatos();
-        artePanel.repaint();
-
-
-    }//GEN-LAST:event_verProductosBtnActionPerformed
-
-    private void eliminarProductoBtnActionPerformed(ActionEvent evt) {//GEN-FIRST:event_eliminarProductoBtnActionPerformed
+    private void usuariosBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariosBtnActionPerformed
         // TODO add your handling code here:
-
-        if (arteTbl.getSelectedRow() == -1)
-            return;
-
-        //eliminamos la fila seleccionada de la lista
-
-        listaProductos.remove(arteTbl.getSelectedRow());
-        modelo.removeRow(arteTbl.getSelectedRow());
-        System.out.println(listaProductos.toString());
-        escribirLista();
-
-    }//GEN-LAST:event_eliminarProductoBtnActionPerformed
-
-    private void papelesBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_papelesBtnActionPerformed
-        // TODO add your handling code here:
-        ruta = "data/papelesProductos.obj";
-        aD.setRuta(ruta);
-    }//GEN-LAST:event_papelesBtnActionPerformed
-
-    private void regalosBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regalosBtnActionPerformed
-        // TODO add your handling code here:
-        ruta="data/regalosProductos.obj";
-        aD.setRuta(ruta);
-    }//GEN-LAST:event_regalosBtnActionPerformed
-
-    private void adhesivosBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adhesivosBtnActionPerformed
-        // TODO add your handling code here:
-        ruta="data/adhesivosProductos.obj";
-        aD.setRuta(ruta);
-    }//GEN-LAST:event_adhesivosBtnActionPerformed
-
-    private void generalesBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generalesBtnActionPerformed
-        // TODO add your handling code here:
-        ruta="data/generalesProductos.obj";
-        aD.setRuta(ruta);
-    }//GEN-LAST:event_generalesBtnActionPerformed
-
-    private void modificarProductoBtnActionPerformed(java.awt.event.ActionEvent evt) {                                                     
-        // TODO add your handling code here:
-        int filaSeleccionada = arteTbl.getSelectedRow();
-        if (filaSeleccionada>=0){
-            AgregarDatos modificar = new AgregarDatos(filaSeleccionada,ruta);
-            agregarDatosPanel.add(modificar);
-            modificar.show();
-        }else
-            JOptionPane.showMessageDialog(this,"Fila no seleccionada");
-
-    }                  
+        this.setVisible(false);
+        Clientes abrirClientes = new Clientes();
+        abrirClientes.setLocationRelativeTo(null);
+        abrirClientes.setVisible(true);
+    }//GEN-LAST:event_usuariosBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -362,7 +127,7 @@ public class Main extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -381,7 +146,6 @@ public class Main extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -391,27 +155,10 @@ public class Main extends javax.swing.JFrame {
         });
     }
 
-    public JTable getArteTbl() {
-        return arteTbl;
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem adhesivosBtn;
-    private javax.swing.JButton agregarBtn;
-    private javax.swing.JPanel agregarDatosPanel;
-    private javax.swing.JMenuItem arteBtn;
-    private javax.swing.JPanel artePanel;
-    private javax.swing.JTable arteTbl;
-    private javax.swing.JButton eliminarProductoBtn;
-    private javax.swing.JMenuItem escrituraBtb;
-    private javax.swing.JMenuItem generalesBtn;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton modificarProductoBtn;
-    private javax.swing.JMenuItem papelesBtn;
-    private javax.swing.JMenuItem regalosBtn;
-    private javax.swing.JButton verProductosBtn;
+    private javax.swing.JButton catalogosBtn;
+    private javax.swing.JButton reporteDeVentasBtn;
+    private javax.swing.JButton usuariosBtn;
+    private javax.swing.JButton ventasBtn;
     // End of variables declaration//GEN-END:variables
 }

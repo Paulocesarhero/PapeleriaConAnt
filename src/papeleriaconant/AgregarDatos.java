@@ -48,9 +48,6 @@ public class AgregarDatos extends javax.swing.JInternalFrame {
         this.repaint();
         this.setResizable(true);
 
-
-
-
     }
 
     public String getStringIdTxt() {
@@ -89,6 +86,7 @@ public class AgregarDatos extends javax.swing.JInternalFrame {
         listaProductos.add(product);
     }
 
+        //llenar la lista con un indice de la lista para la opcion de modificat
     private void llenarLista(int indiceDeLaLista) {
 
         String catalogo = getStringNombreDeCatalogo();
@@ -108,6 +106,7 @@ public class AgregarDatos extends javax.swing.JInternalFrame {
         try {
             ObjectInputStream leyendoFichero = new ObjectInputStream(
                     new FileInputStream(ruta));
+            System.out.println("Esta es la ruta en el try" + ruta);
             listaProductos = (ArrayList<Producto>) leyendoFichero.readObject();
             leyendoFichero.close();
         } catch (FileNotFoundException e) {
@@ -116,6 +115,8 @@ public class AgregarDatos extends javax.swing.JInternalFrame {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+        }catch (NullPointerException e){
+            System.out.println("Esta es la ruta en el catch" + ruta);
         }
     }
 
