@@ -14,12 +14,13 @@ import java.util.ArrayList;
  * @author paulo
  */
 public class VentasFrame extends javax.swing.JFrame {
-    public ArrayList<Producto> listaProductos = new ArrayList<Producto>();
-    public ArrayList<Producto> listaProductosComprados = new ArrayList<Producto>();
+    public ArrayList<Producto> listaCatalogos = new ArrayList<Producto>();
+    public ArrayList<Producto> listaCarrito = new ArrayList<Producto>();
 
     DefaultTableModel modeloProductosVenta = new DefaultTableModel();
     DefaultTableModel modeloCarrito = new DefaultTableModel();
     String ruta = "data/adhesivosProductos.obj";
+    String rutaCarrito = "data/listaCarrito.obj";
 
     /**
      * Creates new form VentasFrame
@@ -62,7 +63,7 @@ public class VentasFrame extends javax.swing.JFrame {
         try {
             ObjectInputStream leyendoFichero = new ObjectInputStream(
                     new FileInputStream(ruta));
-            listaProductos = (ArrayList<Producto>) leyendoFichero.readObject();
+            listaCatalogos = (ArrayList<Producto>) leyendoFichero.readObject();
             leyendoFichero.close();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -70,11 +71,12 @@ public class VentasFrame extends javax.swing.JFrame {
             System.out.println("Una excepcion de tiempo linea 72: la ruta es " + ruta);
         }
     }
-    private void escribirLista() {
+
+    private void escribirLista(String ruta) {
         try {
             ObjectOutputStream escribiendoFichero = new ObjectOutputStream(
                     new FileOutputStream(ruta));
-            escribiendoFichero.writeObject(listaProductos);
+            escribiendoFichero.writeObject(listaCatalogos);
             escribiendoFichero.close();
 
 
@@ -84,7 +86,6 @@ public class VentasFrame extends javax.swing.JFrame {
         }
 
     }
-
 
 
     /**
@@ -110,7 +111,7 @@ public class VentasFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        variableRuta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Adhesivos", "Artes", "Escritura", "Generales", "Papeles", "Regalos" }));
+        variableRuta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Adhesivos", "Artes", "Escritura", "Generales", "Papeles", "Regalos"}));
         variableRuta.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 variableRutaItemStateChanged(evt);
@@ -123,12 +124,12 @@ public class VentasFrame extends javax.swing.JFrame {
         });
 
         carritoTbl.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+                new Object[][]{
 
-            },
-            new String [] {
+                },
+                new String[]{
 
-            }
+                }
         ));
         jScrollPane1.setViewportView(carritoTbl);
 
@@ -146,12 +147,12 @@ public class VentasFrame extends javax.swing.JFrame {
         jLabel2.setText("Productos a la venta");
 
         productosVentaTbl.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+                new Object[][]{
 
-            },
-            new String [] {
+                },
+                new String[]{
 
-            }
+                }
         ));
         jScrollPane2.setViewportView(productosVentaTbl);
 
@@ -172,71 +173,71 @@ public class VentasFrame extends javax.swing.JFrame {
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(variableRuta, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(86, 86, 86))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(realizarCompraBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(regresaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(55, 55, 55))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(agregarAlCarritoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(variableRuta, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(86, 86, 86))
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                                        .addComponent(realizarCompraBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                        .addComponent(regresaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                .addGap(55, 55, 55))))
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(agregarAlCarritoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, Short.MAX_VALUE)))
+                                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(variableRuta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(realizarCompraBtn))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(agregarAlCarritoBtn))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(regresaBtn)))
-                .addContainerGap(49, Short.MAX_VALUE))
+                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel2))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(variableRuta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(realizarCompraBtn))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addComponent(agregarAlCarritoBtn))
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(29, 29, 29)
+                                                .addComponent(regresaBtn)))
+                                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 924, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 924, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -245,35 +246,37 @@ public class VentasFrame extends javax.swing.JFrame {
 
     private void agregarAlCarritoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarAlCarritoBtnActionPerformed
         // TODO add your handling code here:
-        if (productosVentaTbl.getSelectedRow() >= 0){
+        if (productosVentaTbl.getSelectedRow() >= 0) {
             //creamos el JDialog para pregunatar al usuario cuantas piezas va comprar
-            int enStock =  listaProductos.get(productosVentaTbl.getSelectedRow()).getCantidad();
+            int enStock = listaCatalogos.get(productosVentaTbl.getSelectedRow()).getCantidad();
+            if (enStock <= 0) {
+                JOptionPane.showMessageDialog(this, "Ya no hay articulos en existencia");
+            } else {
+                Producto aux = listaCatalogos.get(productosVentaTbl.getSelectedRow());
 
-            Producto aux = listaProductos.get(productosVentaTbl.getSelectedRow());
+                Piezas preguntarCuantasPiezas = new Piezas(this, true, aux);
 
-            Piezas preguntarCuantasPiezas = new Piezas(this,true,listaProductos.get(productosVentaTbl.getSelectedRow()));
+                preguntarCuantasPiezas.setVisible(true);
 
-            preguntarCuantasPiezas.setVisible(true);
-
-            //lo agregamos a la lista correspondiente y ademas lo imprimimos a la tabla del carrito
-            listaProductosComprados.add(preguntarCuantasPiezas.getProductoPiezaSeleccionada());
-            setDatos(modeloCarrito,listaProductosComprados,carritoTbl);
-            this.repaint();
-
-
-            //Eliminamos los productosSeleccionados de la lista del catalogo
-            int resta = (enStock)  - (preguntarCuantasPiezas.getProductoPiezaSeleccionada().getCantidad()) ;
-            Producto productoReducidoPorElUSuario = listaProductos.get(productosVentaTbl.getSelectedRow());
-            productoReducidoPorElUSuario.setCantidad(resta);
-            listaProductos.set(productosVentaTbl.getSelectedRow(), productoReducidoPorElUSuario);
-            escribirLista();
+                //lo agregamos a la lista correspondiente y ademas lo imprimimos a la tabla del carrito
+                listaCarrito.add(preguntarCuantasPiezas.getProductoPiezaSeleccionada());
+//                System.out.println("Cantidad que se tiene lista carrito line 263 " + listaCarrito.get(1).getCantidad()) ;
+                setDatos(modeloCarrito, listaCarrito, carritoTbl);
+//                escribirLista(rutaCarrito);
+                this.repaint();
 
 
+                //Eliminamos los productosSeleccionados de la lista del catalogo
+                int resta = (enStock) - (aux.getCantidad());
+                Producto productoReducidoPorElUSuario = listaCatalogos.get(productosVentaTbl.getSelectedRow());
+                productoReducidoPorElUSuario.setCantidad(resta);
+                listaCatalogos.set(productosVentaTbl.getSelectedRow(), productoReducidoPorElUSuario);
+                escribirLista(ruta);
+            }
 
 
-
-        }else {
-            JOptionPane.showMessageDialog(this,"Fila no seleccionada");
+        } else {
+            JOptionPane.showMessageDialog(this, "Fila no seleccionada");
         }
     }//GEN-LAST:event_agregarAlCarritoBtnActionPerformed
 
@@ -283,46 +286,48 @@ public class VentasFrame extends javax.swing.JFrame {
         Main regresarAlMain = new Main();
         regresarAlMain.setVisible(true);
     }//GEN-LAST:event_regresaBtnActionPerformed
-    private void variableRutaActionPerformed(java.awt.event.ActionEvent event){
+
+    private void variableRutaActionPerformed(java.awt.event.ActionEvent event) {
 
     }
+
     private void variableRutaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_variableRutaItemStateChanged
         // TODO add your handling code here:
         switch (variableRuta.getSelectedIndex()) {
             case 0:
                 ruta = "data/adhesivosProductos.obj";
                 leerlista();
-                setDatos(modeloProductosVenta,listaProductos,productosVentaTbl);
+                setDatos(modeloProductosVenta, listaCatalogos, productosVentaTbl);
                 this.repaint();
                 break;
             case 1:
                 ruta = "data/artesProductos.obj";
                 leerlista();
-                setDatos(modeloProductosVenta,listaProductos,productosVentaTbl);
+                setDatos(modeloProductosVenta, listaCatalogos, productosVentaTbl);
                 this.repaint();
                 break;
             case 2:
                 ruta = "data/escrituraProductos.obj";
                 leerlista();
-                setDatos(modeloProductosVenta,listaProductos,productosVentaTbl);
+                setDatos(modeloProductosVenta, listaCatalogos, productosVentaTbl);
                 this.repaint();
                 break;
             case 3:
                 ruta = "data/generalesProductos.obj";
                 leerlista();
-                setDatos(modeloProductosVenta,listaProductos,productosVentaTbl);
+                setDatos(modeloProductosVenta, listaCatalogos, productosVentaTbl);
                 this.repaint();
                 break;
             case 4:
                 ruta = "data/papelesProductos.obj";
                 leerlista();
-                setDatos(modeloProductosVenta,listaProductos,productosVentaTbl);
+                setDatos(modeloProductosVenta, listaCatalogos, productosVentaTbl);
                 this.repaint();
                 break;
             case 5:
                 ruta = "data/regalosProductos.obj";
                 leerlista();
-                setDatos(modeloProductosVenta,listaProductos,productosVentaTbl);
+                setDatos(modeloProductosVenta, listaCatalogos, productosVentaTbl);
                 this.repaint();
                 break;
         }
@@ -331,6 +336,13 @@ public class VentasFrame extends javax.swing.JFrame {
 
     private void realizarCompraBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_realizarCompraBtnActionPerformed
         // TODO add your handling code here:
+        if (listaCarrito.size() <= 0) {
+            JOptionPane.showMessageDialog(this, "Debe de seleccionar al de la tabla Productos a la venta");
+        } else {
+            EsUnUsuario eUU = new EsUnUsuario(this, true,listaCarrito);
+            eUU.setVisible(true);
+
+        }
     }//GEN-LAST:event_realizarCompraBtnActionPerformed
 
     /**

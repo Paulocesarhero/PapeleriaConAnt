@@ -5,11 +5,23 @@
  */
 package papeleriaconant;
 
+import javax.swing.*;
+import java.util.ArrayList;
+
 /**
  *
  * @author paulo
  */
 public class EsUnUsuario extends javax.swing.JDialog {
+    public ArrayList<Producto> listaPro = new ArrayList<Producto>();
+
+    public ArrayList<Producto> getListaPro() {
+        return listaPro;
+    }
+
+    public void setListaPro(ArrayList<Producto> listaPro) {
+        this.listaPro = listaPro;
+    }
 
     /**
      * Creates new form EsUnUsuario
@@ -17,6 +29,13 @@ public class EsUnUsuario extends javax.swing.JDialog {
     public EsUnUsuario(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+    }
+
+
+    public EsUnUsuario(java.awt.Frame parent, boolean modal,ArrayList<Producto> listaMetodo) {
+        super(parent, modal);
+        initComponents();
+        setListaPro(listaMetodo);
     }
 
     /**
@@ -38,8 +57,18 @@ public class EsUnUsuario extends javax.swing.JDialog {
         jLabel1.setText("¿Es un cliente registrado?");
 
         siBtn.setText("Si");
+        siBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                siBtnActionPerformed(evt);
+            }
+        });
 
         noBtn.setText("No");
+        noBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                noBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -71,6 +100,20 @@ public class EsUnUsuario extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void siBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siBtnActionPerformed
+        // TODO add your handling code here:
+        InserteUnUsuario iU = new InserteUnUsuario(listaPro);
+        this.setVisible(false);
+        iU.setVisible(true);
+
+    }//GEN-LAST:event_siBtnActionPerformed
+
+    private void noBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noBtnActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        JOptionPane.showMessageDialog(this, "Su compra se realizo con exito");
+    }//GEN-LAST:event_noBtnActionPerformed
 
     /**
      * @param args the command line arguments

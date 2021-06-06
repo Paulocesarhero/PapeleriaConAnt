@@ -56,10 +56,10 @@ public class AgregarClientes extends javax.swing.JInternalFrame {
         }catch (NumberFormatException e){
             System.out.println("Error de formato Introduzca un numero : linea 57");
             JOptionPane.showMessageDialog(this,"Inserte un numero en edad Ejemplo:12");
-            this.repaint();
             System.out.println("Ingresaste un valor inadecuado");
         }catch (NullPointerException e){
             System.out.println(iDTxt.getText());
+            System.out.println("Entraste a un null pointer excepcion linea 62");
             System.out.println("Al parecer el objeto esta vacio linea 63");
         }
     }
