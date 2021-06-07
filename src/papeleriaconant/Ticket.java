@@ -5,9 +5,9 @@
  */
 package papeleriaconant;
 
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -17,6 +17,8 @@ import java.util.Date;
 public class Ticket extends javax.swing.JFrame {
     private Usuarios persona = new Usuarios();
     private ArrayList<Producto> productosCompradosPorElUSuario = new ArrayList<Producto>();
+    ArrayList<VentasProducidas> ventasProducidas = new ArrayList<VentasProducidas>();
+    String ruta = "data/ventas.obj";
 
 
     public Usuarios getPersona() {
@@ -60,6 +62,22 @@ public class Ticket extends javax.swing.JFrame {
 
         ticketTxt.setText(usuario+ "\n " +productos+ "\nTotal de compra " + cacularTotal());
     }
+    public void leerListaDeVentas() {
+        try {
+            ObjectInputStream leyendoFichero = new ObjectInputStream(
+                    new FileInputStream(ruta));
+//
+            ventasProducidas = (ArrayList<VentasProducidas>) leyendoFichero.readObject();
+            leyendoFichero.close();
+        } catch (
+                FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
     public double cacularTotal(){
         double suma= 0;
 
@@ -69,11 +87,11 @@ public class Ticket extends javax.swing.JFrame {
         }
         return suma;
     }
-    public void escribirVenta(VentasProducidas vp ){
+    public void escribirListaVentas() {
         try {
             ObjectOutputStream escribiendoFichero = new ObjectOutputStream(
-                    new FileOutputStream("data/ventas.obj"));
-            escribiendoFichero.writeObject(vp);
+                    new FileOutputStream(ruta));
+            escribiendoFichero.writeObject(ventasProducidas);
             escribiendoFichero.close();
 
 
@@ -81,6 +99,7 @@ public class Ticket extends javax.swing.JFrame {
             System.out.println(e.getMessage());
 
         }
+
     }
 
     /**
@@ -157,10 +176,13 @@ public class Ticket extends javax.swing.JFrame {
 
     private void okBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okBtnActionPerformed
         // TODO add your handling code here:
-        Date fechaProducidaPorLaCompraConUsuario = new Date();
-        VentasProducidas vP = new VentasProducidas(fechaProducidaPorLaCompraConUsuario.getDay(),fechaProducidaPorLaCompraConUsuario.getMonth(),
-                fechaProducidaPorLaCompraConUsuario.getYear(), fechaProducidaPorLaCompraConUsuario.getHours(),nombreProductosVendidos(), numeroDePiezasVendidas(),cacularTotal());
-        escribirVenta(vP);
+        leerListaDeVentas();
+        Date fechaActualDelNo = new Date();
+        Calendar cal = Calendar.getInstance();
+        VentasProducidas vP = new VentasProducidas(cal.get(Calendar.DAY_OF_MONTH),cal.get(Calendar.MONTH)+1,
+                fechaActualDelNo.getYear(), fechaActualDelNo.getHours(),nombreProductosVendidos(), numeroDePiezasVendidas(),cacularTotal());
+        ventasProducidas.add(vP);
+        escribirListaVentas();
         this.setVisible(false);
         Main menu = new Main();
         menu.setVisible(true);

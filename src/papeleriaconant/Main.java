@@ -110,6 +110,10 @@ public class Main extends javax.swing.JFrame {
 
     private void reporteDeVentasBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reporteDeVentasBtnActionPerformed
         // TODO add your handling code here:
+        this.setVisible(false);
+        ReporteDeVentas abrirReporteVentanas = new ReporteDeVentas();
+        abrirReporteVentanas.setLocationRelativeTo(null);
+        abrirReporteVentanas.setVisible(true);
     }//GEN-LAST:event_reporteDeVentasBtnActionPerformed
 
     private void usuariosBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariosBtnActionPerformed

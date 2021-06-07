@@ -7,6 +7,7 @@ package papeleriaconant;
 
 import javax.swing.table.DefaultTableModel;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
@@ -20,19 +21,17 @@ public class ReporteDeVentas extends javax.swing.JFrame {
     DefaultTableModel modelo = new DefaultTableModel();
     private ArrayList<VentasProducidas> listaVentas = new ArrayList<VentasProducidas>();
     private VentasProducidas objVentasProducidas;
+    String ruta = "data/ventas.obj";
+
 
     public ArrayList<VentasProducidas> getListaVentas() {
         return listaVentas;
     }
 
-    public void setListaVentas(ArrayList<VentasProducidas> listaVentas) {
-        this.listaVentas = listaVentas;
-    }
-
     public ReporteDeVentas() {
         super("Reporte de ventas");
         initComponents();
-        leerArchivo();
+        leerListaDeVentas();
         setModelo();
         setDatos();
     }
@@ -56,21 +55,76 @@ public class ReporteDeVentas extends javax.swing.JFrame {
         tblReporte.setModel(modelo);
 
     }
-    public void leerArchivo(){
-        ArrayList<VentasProducidas> vP = new ArrayList<VentasProducidas>();
+    public void leerListaDeVentas() {
         try {
             ObjectInputStream leyendoFichero = new ObjectInputStream(
-                    new FileInputStream("data/ventas.obj"));
-            objVentasProducidas = (VentasProducidas) leyendoFichero.readObject();
-            listaVentas.add(objVentasProducidas);
+                    new FileInputStream(ruta));
+//
+            listaVentas = (ArrayList<VentasProducidas>) leyendoFichero.readObject();
             leyendoFichero.close();
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (
+                FileNotFoundException e) {
             e.printStackTrace();
-        } catch (NullPointerException e) {
-            System.out.println("Una excepcion de tiempo linea 72: la ruta es " + "data/ventas.obj");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
+    public void setDatosDia(){
+        int diaMasActual = 0;
+        int mesMasActual = 0;
+        for (VentasProducidas vent:listaVentas) {
+            if (vent.getDia() > diaMasActual){
+                diaMasActual = vent.getDia();
+            }
+            if (vent.getMes() > mesMasActual){
+                mesMasActual = vent.getMes();
+            }
 
+        }
+        Object[] datos = new Object[modelo.getColumnCount()];
+        modelo.setRowCount(0);
+        for (VentasProducidas theprod : listaVentas) {
+            if (theprod.getDia() == diaMasActual && theprod.getMes() == mesMasActual){
+
+                datos[0] = theprod.getDia();
+                datos[1] = theprod.getMes();
+                datos[2] = theprod.getHora();
+                datos[3] = theprod.getNombreProductosVendidos();
+                datos[4] = theprod.getNumeroDePiezasDeProductosVendidos();
+                datos[5] = theprod.getTotalDeVenta();
+                modelo.addRow(datos);
+            }
+        }
+        tblReporte.setModel(modelo);
+
+    }
+    public void setDAtosMes(){
+        int mesMasActual = 0;
+        for (VentasProducidas vent:listaVentas) {
+            if (vent.getMes() > mesMasActual){
+                mesMasActual = vent.getMes();
+            }
+
+        }
+        Object[] datos = new Object[modelo.getColumnCount()];
+        modelo.setRowCount(0);
+        for (VentasProducidas theprod : listaVentas) {
+            if (theprod.getMes() == mesMasActual){
+
+                datos[0] = theprod.getDia();
+                datos[1] = theprod.getMes();
+                datos[2] = theprod.getHora();
+                datos[3] = theprod.getNombreProductosVendidos();
+                datos[4] = theprod.getNumeroDePiezasDeProductosVendidos();
+                datos[5] = theprod.getTotalDeVenta();
+                modelo.addRow(datos);
+            }
+        }
+        tblReporte.setModel(modelo);
+
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -115,7 +169,7 @@ public class ReporteDeVentas extends javax.swing.JFrame {
             }
         });
 
-        semanaBtn.setText("Semana");
+        semanaBtn.setText("Todas las ventas");
         semanaBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 semanaBtnActionPerformed(evt);
@@ -123,35 +177,40 @@ public class ReporteDeVentas extends javax.swing.JFrame {
         });
 
         jButton4.setText("Regresar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(245, 245, 245)
                         .addComponent(diaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(71, 71, 71)
-                        .addComponent(semanaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(semanaBtn)
                         .addGap(44, 44, 44)
                         .addComponent(mesBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(195, 195, 195)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(188, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62))
+                        .addGap(127, 127, 127)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
+                .addContainerGap(47, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(diaBtn)
                     .addComponent(semanaBtn)
@@ -177,15 +236,30 @@ public class ReporteDeVentas extends javax.swing.JFrame {
 
     private void diaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diaBtnActionPerformed
         // TODO add your handling code here:
+        setDatosDia();
+        this.repaint();
+
     }//GEN-LAST:event_diaBtnActionPerformed
 
     private void semanaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_semanaBtnActionPerformed
         // TODO add your handling code here:
+        setDatos();
+        this.repaint();
     }//GEN-LAST:event_semanaBtnActionPerformed
 
     private void mesBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mesBtnActionPerformed
         // TODO add your handling code here:
+        setDAtosMes();
+        this.repaint();
     }//GEN-LAST:event_mesBtnActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+
+        this.setVisible(false);
+        Main regresarAlMain = new Main();
+        regresarAlMain.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
