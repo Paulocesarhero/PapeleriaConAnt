@@ -176,6 +176,9 @@ public class EsUnUsuario extends javax.swing.JDialog {
         escribirListaVentas();
         this.setVisible(false);
         JOptionPane.showMessageDialog(this, "Su compra se realizo con exito");
+        Main abrirMain = new Main();
+        abrirMain.setLocationRelativeTo(null);
+        abrirMain.setVisible(true);
     }//GEN-LAST:event_noBtnActionPerformed
 
     /**

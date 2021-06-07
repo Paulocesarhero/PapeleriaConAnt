@@ -1,0 +1,2169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>papeleriaconant.AgregarClientes</OriginalElement>
+  <nodes>
+    <node x="6518.52014541317" y="16419.5">java.awt.Container.WakingRunnable</node>
+    <node x="5684.020145413171" y="16419.5">java.awt.Container.MouseEventTargetFilter</node>
+    <node x="4644.563492063491" y="19928.0">java.awt.Component.DummyRequestFocusController</node>
+    <node x="2332.072771648238" y="34033.5">papeleriaconant.AgregarDatos</node>
+    <node x="1447.072771648238" y="33019.5">papeleriaconant.Producto</node>
+    <node x="6037.83264541317" y="32564.0">javax.swing.JDialog</node>
+    <node x="6274.33264541317" y="36116.0">papeleriaconant.EsUnUsuario</node>
+    <node x="3967.685470060935" y="19823.5">java.awt.image.ImageObserver</node>
+    <node x="1472.2464120935929" y="9596.5">java.awt.Window.Type</node>
+    <node x="9368.904517679983" y="16224.0">java.awt.Component.BltBufferStrategy</node>
+    <node x="7128.167658730158" y="19901.5">java.awt.Component.FlipSubRegionBufferStrategy</node>
+    <node x="10712.684552722603" y="35282.0">papeleriaconant.Ticket</node>
+    <node x="5069.687956743948" y="1637.0">java.awt.Container.AccessibleAWTContainer</node>
+    <node x="10857.66776446079" y="12531.0">javax.swing.JInternalFrame.JDesktopIcon</node>
+    <node x="6074.563492063491" y="19862.5">java.awt.Component.SingleBufferStrategy</node>
+    <node x="10808.010880556416" y="1951.0">javax.swing.JComponent.ActionStandin</node>
+    <node x="8385.91776446079" y="32707.0">javax.swing.JFrame</node>
+    <node x="2427.072771648238" y="34702.0">papeleriaconant.Catalogos</node>
+    <node x="2222.2533272037927" y="8933.0">java.awt.Dialog</node>
+    <node x="9634.321184346649" y="19901.5">java.awt.Component.BltSubRegionBufferStrategy</node>
+    <node x="8905.904517679983" y="12662.0">javax.swing.JInternalFrame.FocusPropertyChangeListener</node>
+    <node x="13614.114562843153" y="27057.5">papeleriaconant.Persona</node>
+    <node x="2198.8244811582917" y="7882.5">java.awt.Dialog.ModalExclusionType</node>
+    <node x="3889.5614914586718" y="7180.0">java.awt.Frame</node>
+    <node x="12712.6266700301" y="34715.0">papeleriaconant.Clientes</node>
+    <node x="9135.293336696766" y="33149.5">javax.swing.JComponent.AccessibleJComponent.AccessibleContainerHandler</node>
+    <node x="9459.912851013316" y="207.5">javax.accessibility.Accessible</node>
+    <node x="6262.33264541317" y="22169.0">java.awt.Component</node>
+    <node x="5506.635195444005" y="12662.0">java.awt.Container.EventTargetFilter</node>
+    <node x="2221.2672160926813" y="0.0">java.io.Serializable</node>
+    <node x="765.389788270314" y="155.0">java.awt.Component.AccessibleAWTComponent.AccessibleAWTComponentHandler</node>
+    <node x="11410.010880556416" y="1977.0">javax.swing.JComponent.KeyboardState</node>
+    <node x="10725.578783491834" y="35759.0">papeleriaconant.InserteUnUsuario</node>
+    <node x="10375.010880556416" y="2029.0">javax.swing.JComponent.ReadObjectCallback</node>
+    <node x="8713.077507107848" y="35082.0">papeleriaconant.Main</node>
+    <node x="1170.389788270314" y="181.0">java.awt.Component.AccessibleAWTComponent.AccessibleAWTFocusHandler</node>
+    <node x="12443.043336696766" y="12623.0">javax.swing.WindowConstants</node>
+    <node x="13399.276242679673" y="34021.0">papeleriaconant.VentasProducidas</node>
+    <node x="986.0727716482379" y="16406.5">javax.swing.JDialog.AccessibleJDialog</node>
+    <node x="18.722222222222626" y="1977.0">java.awt.Component.BaselineResizeBehavior</node>
+    <node x="10815.477101370852" y="14989.0">javax.swing.JInternalFrame</node>
+    <node x="12956.211785065374" y="2016.5">java.beans.JavaBean</node>
+    <node x="11871.169336219336" y="34689.0">papeleriaconant.ReporteDeVentas</node>
+    <node x="1872.8244811582917" y="7869.5">java.awt.Dialog.ModalityType</node>
+    <node x="9749.109431127456" y="9570.5">javax.swing.JInternalFrame.JDesktopIcon.AccessibleJDesktopIcon</node>
+    <node x="10078.821184346649" y="12649.0">javax.swing.SwingContainer</node>
+    <node x="12023.043336696766" y="2042.5">javax.swing.TransferHandler.HasGetTransferHandler</node>
+    <node x="9213.409431127457" y="7752.0">javax.swing.JComponent.AccessibleJComponent</node>
+    <node x="6970.52014541317" y="16198.0">java.awt.Component.FlipBufferStrategy</node>
+    <node x="11273.927547223084" y="1624.0">javax.swing.JComponent.IntVector</node>
+    <node x="1175.014788270314" y="423.0">java.awt.Component.AccessibleAWTComponent</node>
+    <node x="7520.631752556028" y="33149.5">javax.swing.JComponent.AccessibleJComponent.AccessibleFocusHandler</node>
+    <node x="8372.56498015873" y="12676.0">java.awt.Component.ProxyCapabilities</node>
+    <node x="5385.563492063491" y="18120.0">java.awt.Container</node>
+    <node x="6218.520145413171" y="16419.5">java.awt.Container.DropTargetEventTargetFilter</node>
+    <node x="12844.265558918989" y="34124.5">papeleriaconant.AgregarClientes</node>
+    <node x="4450.0882771729575" y="34164.0">papeleriaconant.Piezas</node>
+    <node x="10396.20824897747" y="2337.0">javax.swing.JComponent</node>
+    <node x="2890.1699938704605" y="9583.0">java.awt.Window.WindowDisposerRecord</node>
+    <node x="2013.072771648238" y="34702.0">papeleriaconant.VentasFrame</node>
+    <node x="2901.7116605371266" y="10698.0">java.awt.Window</node>
+    <node x="7748.06498015873" y="4626.0">java.awt.MenuContainer</node>
+    <node x="8384.543336696766" y="1964.5">javax.swing.RootPaneContainer</node>
+    <node x="3700.444824792005" y="4625.5">java.awt.Frame.AccessibleAWTFrame</node>
+    <node x="7227.849778777339" y="930.5">java.awt.Container.AccessibleAWTContainer.AccessibleContainerHandler</node>
+    <node x="6747.52014541317" y="19928.0">java.awt.Component.AWTTreeLock</node>
+    <node x="11288.66776446079" y="12570.5">javax.swing.JInternalFrame.AccessibleJInternalFrame</node>
+    <node x="3282.6699938704605" y="2016.0">java.awt.Window.AccessibleAWTWindow</node>
+    <node x="13557.364562843153" y="33071.5">papeleriaconant.Usuarios</node>
+    <node x="2754.241726585218" y="7908.5">java.awt.Dialog.AccessibleAWTDialog</node>
+    <node x="3433.64618434665" y="16406.5">javax.swing.JFrame.AccessibleJFrame</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="papeleriaconant.Piezas" target="javax.swing.WindowConstants">
+      <point x="176.3125" y="-71.0" />
+      <point x="4827.9007771729575" y="34001.0" />
+      <point x="12509.1266700301" y="34001.0" />
+      <point x="12509.1266700301" y="14929.0" />
+      <point x="12556.5766700301" y="14929.0" />
+      <point x="-17.46666666666715" y="70.5" />
+    </edge>
+    <edge source="javax.swing.JFrame.AccessibleJFrame" target="java.awt.Window">
+      <point x="-143.0" y="-58.0" />
+      <point x="3505.14618434665" y="14969.0" />
+      <point x="3446.2116605371266" y="14969.0" />
+      <point x="242.0" y="1995.5" />
+    </edge>
+    <edge source="javax.swing.JDialog.AccessibleJDialog" target="java.awt.Window">
+      <point x="143.0" y="-58.0" />
+      <point x="1343.572771648238" y="14879.0" />
+      <point x="3010.611660537126" y="14879.0" />
+      <point x="-193.60000000000036" y="1995.5" />
+    </edge>
+    <edge source="papeleriaconant.Ticket" target="papeleriaconant.Usuarios">
+      <point x="271.40625" y="-188.5" />
+      <point x="11273.590802722603" y="35262.0" />
+      <point x="14029.026242679673" y="35262.0" />
+      <point x="14029.026242679673" y="33981.0" />
+      <point x="13952.28763976623" y="33981.0" />
+      <point x="92.92307692307622" y="136.0" />
+    </edge>
+    <edge source="java.awt.Window" target="java.awt.Window.Type">
+      <point x="-292.41666666666606" y="-1995.5" />
+      <point x="2911.7949938704605" y="10638.0" />
+      <point x="1511.5797454269268" y="10638.0" />
+      <point x="-78.66666666666606" y="84.0" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="javax.swing.JComponent">
+      <point x="-291.7894736842104" y="2346.5" />
+      <point x="10450.918775293258" y="7060.0" />
+      <point x="10366.20824897747" y="7060.0" />
+      <point x="10366.20824897747" y="3510.25" />
+      <point x="-346.5" y="-1173.25" />
+    </edge>
+    <edge source="java.awt.Container.AccessibleAWTContainer" target="javax.accessibility.Accessible">
+      <point x="-70.125" y="-110.5" />
+      <point x="5280.062956743948" y="353.0" />
+      <point x="9511.287851013316" y="353.0" />
+      <point x="-154.125" y="31.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="java.awt.Component">
+      <point x="0.0" y="-643.5" />
+      <point x="6335.33264541317" y="32374.0" />
+      <point x="6464.83264541317" y="32374.0" />
+      <point x="-135.0" y="5037.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.KeyboardState" target="javax.swing.JComponent">
+      <point x="110.66666666666697" y="97.0" />
+      <point x="11686.677547223084" y="2287.0" />
+      <point x="10961.550354240626" y="2287.0" />
+      <point x="218.84210526315792" y="-2346.5" />
+    </edge>
+    <edge source="papeleriaconant.VentasFrame" target="javax.swing.WindowConstants">
+      <point x="177.29999999999927" y="-123.5" />
+      <point x="2387.372771648237" y="34599.0" />
+      <point x="12525.194518846754" y="34599.0" />
+      <point x="12525.194518846754" y="14939.0" />
+      <point x="12574.043336696766" y="14939.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="papeleriaconant.Clientes" target="papeleriaconant.Main">
+      <point x="43.75" y="110.5" />
+      <point x="12931.3766700301" y="35052.0" />
+      <point x="8923.052507107848" y="35052.0" />
+      <point x="96.47500000000036" y="-45.0" />
+    </edge>
+    <edge source="papeleriaconant.VentasFrame" target="papeleriaconant.Piezas">
+      <point x="19.700000000000728" y="-123.5" />
+      <point x="2229.7727716482386" y="34539.0" />
+      <point x="4550.8382771729575" y="34539.0" />
+      <point x="-100.75" y="71.0" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.image.ImageObserver">
+      <point x="-198.88392857142844" y="-5037.5" />
+      <point x="6400.948716841742" y="22029.0" />
+      <point x="4094.685470060935" y="22029.0" />
+      <point x="-127.0" y="136.0" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="javax.swing.JComponent.KeyboardState">
+      <point x="182.36842105263167" y="-2346.5" />
+      <point x="10925.0766700301" y="2277.0" />
+      <point x="11576.010880556416" y="2277.0" />
+      <point x="0.0" y="97.0" />
+    </edge>
+    <edge source="java.awt.Container" target="javax.swing.JInternalFrame">
+      <point x="280.25" y="-1839.5" />
+      <point x="5990.313492063491" y="18090.0" />
+      <point x="10911.810434704184" y="18090.0" />
+      <point x="-192.66666666666652" y="1475.5" />
+    </edge>
+    <edge source="java.awt.Window" target="java.awt.Component">
+      <point x="121.0" y="1995.5" />
+      <point x="3325.2116605371266" y="14929.0" />
+      <point x="3299.4295176799824" y="14929.0" />
+      <point x="3299.4295176799824" y="22049.0" />
+      <point x="6376.841573984599" y="22049.0" />
+      <point x="-222.99107142857156" y="-5037.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.AccessibleJInternalFrame" target="javax.swing.JComponent">
+      <point x="105.0" y="-123.0" />
+      <point x="11603.66776446079" y="7140.0" />
+      <point x="10888.602985819572" y="7140.0" />
+      <point x="145.89473684210498" y="2346.5" />
+    </edge>
+    <edge source="papeleriaconant.EsUnUsuario" target="papeleriaconant.InserteUnUsuario">
+      <point x="57.64705882352973" y="-188.5" />
+      <point x="6576.9797042367" y="36036.0" />
+      <point x="10879.078783491834" y="36036.0" />
+      <point x="-153.5" y="123.5" />
+    </edge>
+    <edge source="papeleriaconant.Producto" target="java.io.Serializable">
+      <point x="0.0" y="-188.0" />
+      <point x="1714.072771648238" y="32544.0" />
+      <point x="0.0" y="32544.0" />
+      <point x="0.0" y="55.0" />
+      <point x="2225.3783272037927" y="55.0" />
+      <point x="-69.88888888888869" y="17.5" />
+    </edge>
+    <edge source="papeleriaconant.Ticket" target="javax.swing.WindowConstants">
+      <point x="18.09375" y="-188.5" />
+      <point x="11020.278302722603" y="35192.0" />
+      <point x="13204.765558918989" y="35192.0" />
+      <point x="13204.765558918989" y="14939.0" />
+      <point x="12661.376670030102" y="14939.0" />
+      <point x="87.33333333333394" y="70.5" />
+    </edge>
+    <edge source="java.awt.Window" target="java.awt.Dialog">
+      <point x="-211.75" y="-1995.5" />
+      <point x="2992.4616605371266" y="10598.0" />
+      <point x="2578.6461843466495" y="10598.0" />
+      <point x="62.89285714285688" y="747.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="javax.swing.JInternalFrame.AccessibleJInternalFrame">
+      <point x="39.40909090909099" y="-1475.5" />
+      <point x="11143.886192279942" y="14799.0" />
+      <point x="11358.66776446079" y="14799.0" />
+      <point x="-140.0" y="123.0" />
+    </edge>
+    <edge source="java.awt.Component.FlipBufferStrategy" target="java.awt.Component.ProxyCapabilities">
+      <point x="129.25" y="-266.5" />
+      <point x="7358.27014541317" y="14969.0" />
+      <point x="8403.231646825398" y="14969.0" />
+      <point x="-61.33333333333303" y="17.5" />
+    </edge>
+    <edge source="java.awt.Component.FlipBufferStrategy" target="java.awt.Window">
+      <point x="-129.25" y="-266.5" />
+      <point x="7099.77014541317" y="14919.0" />
+      <point x="3470.4116605371273" y="14919.0" />
+      <point x="266.2000000000007" y="1995.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent.AccessibleAWTFocusHandler" target="java.io.Serializable">
+      <point x="0.0" y="-58.0" />
+      <point x="1323.389788270314" y="115.0" />
+      <point x="2274.7116605371266" y="115.0" />
+      <point x="-20.555555555554747" y="17.5" />
+    </edge>
+    <edge source="papeleriaconant.Catalogos" target="javax.swing.WindowConstants">
+      <point x="159.55555555555566" y="-123.5" />
+      <point x="2766.1283272037936" y="34609.0" />
+      <point x="12536.194518846754" y="34609.0" />
+      <point x="12536.194518846754" y="14949.0" />
+      <point x="12591.510003363433" y="14949.0" />
+      <point x="17.46666666666715" y="70.5" />
+    </edge>
+    <edge source="java.awt.Window.AccessibleAWTWindow" target="java.awt.Container.AccessibleAWTContainer">
+      <point x="0.0" y="-58.0" />
+      <point x="3497.1699938704605" y="1921.0" />
+      <point x="5350.187956743948" y="1921.0" />
+      <point x="0.0" y="110.5" />
+    </edge>
+    <edge source="java.awt.Window.Type" target="java.io.Serializable">
+      <point x="0.0" y="-84.0" />
+      <point x="1590.2464120935929" y="7090.0" />
+      <point x="754.889788270314" y="7090.0" />
+      <point x="754.889788270314" y="95.0" />
+      <point x="2258.2672160926813" y="95.0" />
+      <point x="-37.0" y="17.5" />
+    </edge>
+    <edge source="papeleriaconant.InserteUnUsuario" target="papeleriaconant.Producto">
+      <point x="-236.15384615384573" y="-123.5" />
+      <point x="10796.424937337988" y="35729.0" />
+      <point x="1533.853554950736" y="35729.0" />
+      <point x="1533.853554950736" y="33901.0" />
+      <point x="1561.5013430768086" y="33901.0" />
+      <point x="-152.57142857142935" y="188.0" />
+    </edge>
+    <edge source="javax.swing.JComponent.AccessibleJComponent.AccessibleContainerHandler" target="javax.accessibility.Accessible">
+      <point x="128.33333333333348" y="-58.0" />
+      <point x="9456.1266700301" y="32544.0" />
+      <point x="13390.14234062093" y="32544.0" />
+      <point x="13390.14234062093" y="363.0" />
+      <point x="9853.787851013316" y="363.0" />
+      <point x="188.375" y="31.5" />
+    </edge>
+    <edge source="java.awt.Component.BltSubRegionBufferStrategy" target="java.awt.Component">
+      <point x="129.0" y="58.0" />
+      <point x="10021.321184346649" y="22059.0" />
+      <point x="6871.038002556027" y="22059.0" />
+      <point x="271.2053571428569" y="-5037.5" />
+    </edge>
+    <edge source="papeleriaconant.Piezas" target="java.awt.Frame">
+      <point x="-25.1875" y="-71.0" />
+      <point x="4626.4007771729575" y="33931.0" />
+      <point x="4486.185470060935" y="33931.0" />
+      <point x="4486.185470060935" y="8913.0" />
+      <point x="4168.454348601528" y="8913.0" />
+      <point x="73.39285714285688" y="786.5" />
+    </edge>
+    <edge source="javax.swing.JDialog.AccessibleJDialog" target="java.awt.Dialog">
+      <point x="-143.0" y="-58.0" />
+      <point x="1057.572771648238" y="10678.0" />
+      <point x="2494.7890414895064" y="10678.0" />
+      <point x="-20.964285714286234" y="747.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="javax.swing.JComponent">
+      <point x="144.5" y="-1475.5" />
+      <point x="11248.977101370852" y="14839.0" />
+      <point x="11730.16776446079" y="14839.0" />
+      <point x="11730.16776446079" y="7120.0" />
+      <point x="10961.550354240626" y="7120.0" />
+      <point x="218.84210526315792" y="2346.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.IntVector" target="javax.swing.JComponent.IntVector">
+      <point x="-111.375" y="123.5" />
+      <point x="11311.052547223084" y="1891.0" />
+      <point x="11253.927547223084" y="1891.0" />
+      <point x="11253.927547223084" y="1747.5" />
+      <point x="-148.5" y="-0.0" />
+    </edge>
+    <edge source="papeleriaconant.Main" target="papeleriaconant.ReporteDeVentas">
+      <point x="17.024999999999636" y="-45.0" />
+      <point x="8843.602507107847" y="34982.0" />
+      <point x="11926.919336219336" y="34982.0" />
+      <point x="-167.25" y="136.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.KeyboardState" target="javax.swing.JComponent.KeyboardState">
+      <point x="-110.66666666666652" y="97.0" />
+      <point x="11465.34421388975" y="2191.0" />
+      <point x="11390.010880556416" y="2191.0" />
+      <point x="11390.010880556416" y="2074.0" />
+      <point x="-166.0" y="-0.0" />
+    </edge>
+    <edge source="javax.swing.JComponent.AccessibleJComponent.AccessibleFocusHandler" target="javax.swing.JComponent.AccessibleJComponent">
+      <point x="76.5" y="-58.0" />
+      <point x="7750.131752556028" y="32404.0" />
+      <point x="8651.91776446079" y="32404.0" />
+      <point x="8651.91776446079" y="8903.0" />
+      <point x="9389.509431127455" y="8903.0" />
+      <point x="-117.40000000000009" y="214.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="java.awt.Window">
+      <point x="-105.0" y="-643.5" />
+      <point x="6230.33264541317" y="32484.0" />
+      <point x="3252.611660537126" y="32484.0" />
+      <point x="48.399999999999636" y="1995.5" />
+    </edge>
+    <edge source="java.awt.Component.AWTTreeLock" target="java.awt.Component">
+      <point x="45.5" y="31.5" />
+      <point x="6884.02014541317" y="21859.0" />
+      <point x="6629.966573984599" y="21859.0" />
+      <point x="30.13392857142844" y="-5037.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.AccessibleJComponent" target="javax.accessibility.Accessible">
+      <point x="0.0" y="-214.5" />
+      <point x="9506.909431127457" y="403.0" />
+      <point x="9682.537851013316" y="403.0" />
+      <point x="17.125" y="31.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent" target="java.awt.Component">
+      <point x="0.0" y="565.5" />
+      <point x="1455.514788270314" y="1604.0" />
+      <point x="1461.014788270315" y="1604.0" />
+      <point x="1461.014788270315" y="7130.0" />
+      <point x="931.5727716482379" y="7130.0" />
+      <point x="931.5727716482379" y="22079.0" />
+      <point x="6340.680859698884" y="22079.0" />
+      <point x="-259.15178571428623" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Dialog" target="java.awt.Frame">
+      <point x="260.8888888888887" y="-747.5" />
+      <point x="2776.6422160926813" y="8853.0" />
+      <point x="3962.9543486015286" y="8853.0" />
+      <point x="-132.10714285714312" y="786.5" />
+    </edge>
+    <edge source="java.awt.Frame.AccessibleAWTFrame" target="java.awt.Frame">
+      <point x="85.79999999999927" y="58.0" />
+      <point x="4000.7448247920042" y="7160.0" />
+      <point x="4012.861491458671" y="7160.0" />
+      <point x="-82.20000000000073" y="-786.5" />
+    </edge>
+    <edge source="java.awt.Dialog" target="java.awt.Dialog.AccessibleAWTDialog">
+      <point x="65.22222222222263" y="-747.5" />
+      <point x="2580.9755494260153" y="8813.0" />
+      <point x="2797.141726585218" y="8813.0" />
+      <point x="-171.60000000000036" y="58.0" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component.FlipBufferStrategy">
+      <point x="66.29464285714312" y="-5037.5" />
+      <point x="6666.127288270313" y="21889.0" />
+      <point x="7106.667658730158" y="21889.0" />
+      <point x="7106.667658730158" y="18020.0" />
+      <point x="7185.936812079837" y="18020.0" />
+      <point x="-43.08333333333303" y="266.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="javax.swing.JInternalFrame.FocusPropertyChangeListener">
+      <point x="-249.590909090909" y="-1475.5" />
+      <point x="10854.886192279942" y="14899.0" />
+      <point x="9060.029517679983" y="14899.0" />
+      <point x="-51.375" y="31.5" />
+    </edge>
+    <edge source="papeleriaconant.Main" target="papeleriaconant.Catalogos">
+      <point x="-62.42499999999927" y="-45.0" />
+      <point x="8764.152507107849" y="35022.0" />
+      <point x="2471.947771648238" y="35022.0" />
+      <point x="-134.625" y="123.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.ReadObjectCallback" target="java.awt.Component">
+      <point x="-137.55000000000018" y="45.0" />
+      <point x="10433.960880556417" y="2317.0" />
+      <point x="9172.709431127456" y="2317.0" />
+      <point x="9172.709431127456" y="8893.0" />
+      <point x="8640.91776446079" y="8893.0" />
+      <point x="8640.91776446079" y="21989.0" />
+      <point x="6786.663002556027" y="21989.0" />
+      <point x="186.83035714285688" y="-5037.5" />
+    </edge>
+    <edge source="papeleriaconant.ReporteDeVentas" target="papeleriaconant.VentasProducidas">
+      <point x="63.714285714286234" y="-136.5" />
+      <point x="12157.883621933623" y="34629.0" />
+      <point x="13426.321697225128" y="34629.0" />
+      <point x="-270.45454545454595" y="214.0" />
+    </edge>
+    <edge source="papeleriaconant.EsUnUsuario" target="papeleriaconant.Producto">
+      <point x="-201.76470588235316" y="-188.5" />
+      <point x="6317.567939530817" y="36086.0" />
+      <point x="1489.853554950736" y="36086.0" />
+      <point x="1489.853554950736" y="34001.0" />
+      <point x="1459.7870573625241" y="34001.0" />
+      <point x="-254.28571428571377" y="188.0" />
+    </edge>
+    <edge source="java.awt.Container.MouseEventTargetFilter" target="java.awt.Container.MouseEventTargetFilter">
+      <point x="-104.625" y="45.0" />
+      <point x="5718.895145413171" y="16529.5" />
+      <point x="5664.020145413171" y="16529.5" />
+      <point x="5664.020145413171" y="16464.5" />
+      <point x="-139.5" y="-0.0" />
+    </edge>
+    <edge source="java.awt.Container" target="java.awt.Container.EventTargetFilter">
+      <point x="-73.75" y="-1839.5" />
+      <point x="5636.313492063491" y="18010.0" />
+      <point x="5286.742338301148" y="18010.0" />
+      <point x="5286.742338301148" y="14969.0" />
+      <point x="5566.420909729721" y="14969.0" />
+      <point x="-79.71428571428532" y="31.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.AccessibleJComponent" target="javax.swing.JComponent">
+      <point x="234.79999999999995" y="-214.5" />
+      <point x="9741.709431127456" y="7090.0" />
+      <point x="10523.866143714311" y="7090.0" />
+      <point x="-218.84210526315792" y="2346.5" />
+    </edge>
+    <edge source="java.awt.Window.AccessibleAWTWindow" target="java.awt.Window">
+      <point x="85.79999999999927" y="58.0" />
+      <point x="3582.96999387046" y="2317.0" />
+      <point x="3508.16999387046" y="2317.0" />
+      <point x="3508.16999387046" y="10538.0" />
+      <point x="3315.1283272037927" y="10538.0" />
+      <point x="110.91666666666606" y="-1995.5" />
+    </edge>
+    <edge source="java.awt.Component.BltBufferStrategy" target="java.awt.Component.BltBufferStrategy">
+      <point x="-182.08333333333326" y="240.5" />
+      <point x="9405.321184346649" y="16725.0" />
+      <point x="9348.904517679983" y="16725.0" />
+      <point x="9348.904517679983" y="16464.5" />
+      <point x="-218.5" y="-0.0" />
+    </edge>
+    <edge source="java.awt.Component" target="javax.swing.JComponent">
+      <point x="283.25892857142844" y="-5037.5" />
+      <point x="6883.091573984599" y="22079.0" />
+      <point x="10297.321184346649" y="22079.0" />
+      <point x="10297.321184346649" y="10678.0" />
+      <point x="10710.501097794124" y="10678.0" />
+      <point x="10710.501097794124" y="7150.0" />
+      <point x="10742.70824897747" y="7150.0" />
+      <point x="0.0" y="2346.5" />
+    </edge>
+    <edge source="java.awt.Window.WindowDisposerRecord" target="java.awt.Window.WindowDisposerRecord">
+      <point x="-174.58333333333303" y="97.5" />
+      <point x="2925.0866605371275" y="9798.0" />
+      <point x="2870.1699938704605" y="9798.0" />
+      <point x="2870.1699938704605" y="9680.5" />
+      <point x="-209.5" y="-0.0" />
+    </edge>
+    <edge source="java.awt.Window" target="javax.swing.RootPaneContainer">
+      <point x="231.91666666666606" y="-1995.5" />
+      <point x="3436.1283272037927" y="10598.0" />
+      <point x="8046.56498015873" y="10598.0" />
+      <point x="8046.56498015873" y="2277.0" />
+      <point x="8409.543336696766" y="2277.0" />
+      <point x="-150.0" y="109.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent" target="java.awt.Component.AccessibleAWTComponent">
+      <point x="-224.39999999999964" y="565.5" />
+      <point x="1231.1147882703144" y="1574.0" />
+      <point x="1155.014788270314" y="1574.0" />
+      <point x="1155.014788270314" y="988.5" />
+      <point x="-280.5" y="-0.0" />
+    </edge>
+    <edge source="javax.swing.JComponent.KeyboardState" target="javax.swing.JComponent.IntVector">
+      <point x="-110.66666666666674" y="-97.0" />
+      <point x="11465.344213889748" y="1931.0" />
+      <point x="11459.552547223084" y="1931.0" />
+      <point x="37.125" y="123.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="javax.swing.JInternalFrame.JDesktopIcon">
+      <point x="-118.22727272727252" y="-1475.5" />
+      <point x="10986.24982864358" y="14969.0" />
+      <point x="10971.834431127456" y="14969.0" />
+      <point x="-91.33333333333348" y="162.5" />
+    </edge>
+    <edge source="java.awt.Window" target="java.awt.Window.AccessibleAWTWindow">
+      <point x="70.58333333333394" y="-1995.5" />
+      <point x="3274.7949938704605" y="10518.0" />
+      <point x="3360.453647824959" y="10518.0" />
+      <point x="3360.453647824959" y="2317.0" />
+      <point x="3411.3699938704613" y="2317.0" />
+      <point x="-85.79999999999927" y="58.0" />
+    </edge>
+    <edge source="papeleriaconant.VentasFrame" target="papeleriaconant.EsUnUsuario">
+      <point x="-164.16666666666606" y="123.5" />
+      <point x="2045.9061049815718" y="35062.0" />
+      <point x="2065.913078760259" y="35062.0" />
+      <point x="2065.913078760259" y="36056.0" />
+      <point x="6404.038527766111" y="36056.0" />
+      <point x="-115.29411764705947" y="-188.5" />
+    </edge>
+    <edge source="java.awt.Container.AccessibleAWTContainer.AccessibleContainerHandler" target="javax.accessibility.Accessible">
+      <point x="96.25" y="-58.0" />
+      <point x="7516.599778777339" y="363.0" />
+      <point x="9545.537851013316" y="363.0" />
+      <point x="-119.875" y="31.5" />
+    </edge>
+    <edge source="java.awt.Frame.AccessibleAWTFrame" target="java.awt.Window">
+      <point x="-171.60000000000036" y="58.0" />
+      <point x="3743.3448247920046" y="7150.0" />
+      <point x="3519.16999387046" y="7150.0" />
+      <point x="3519.16999387046" y="10548.0" />
+      <point x="3335.2949938704605" y="10548.0" />
+      <point x="131.08333333333394" y="-1995.5" />
+    </edge>
+    <edge source="papeleriaconant.Main" target="papeleriaconant.VentasFrame">
+      <point x="-107.82500000000073" y="-45.0" />
+      <point x="8718.752507107847" y="35062.0" />
+      <point x="2177.239438314904" y="35062.0" />
+      <point x="-32.83333333333394" y="123.5" />
+    </edge>
+    <edge source="papeleriaconant.Main" target="java.awt.Window">
+      <point x="-17.024999999999636" y="-45.0" />
+      <point x="8809.552507107848" y="34982.0" />
+      <point x="2796.572771648238" y="34982.0" />
+      <point x="2796.572771648238" y="14939.0" />
+      <point x="3155.811660537127" y="14939.0" />
+      <point x="-48.399999999999636" y="1995.5" />
+    </edge>
+    <edge source="java.awt.Frame" target="java.awt.Frame">
+      <point x="-161.46428571428578" y="786.5" />
+      <point x="3933.597205744386" y="8783.0" />
+      <point x="3859.5614914586718" y="8783.0" />
+      <point x="3859.5614914586718" y="7573.25" />
+      <point x="-205.5" y="-393.25" />
+    </edge>
+    <edge source="java.awt.Component.BaselineResizeBehavior" target="java.io.Serializable">
+      <point x="0.0" y="-97.0" />
+      <point x="215.72222222222263" y="75.0" />
+      <point x="2241.822771648236" y="75.0" />
+      <point x="-53.44444444444525" y="17.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.ReadObjectCallback" target="javax.swing.JComponent.ReadObjectCallback">
+      <point x="-176.8499999999999" y="45.0" />
+      <point x="10394.660880556416" y="2139.0" />
+      <point x="10355.010880556416" y="2139.0" />
+      <point x="10355.010880556416" y="2074.0" />
+      <point x="-196.5" y="-0.0" />
+    </edge>
+    <edge source="papeleriaconant.Catalogos" target="papeleriaconant.AgregarDatos">
+      <point x="-79.77777777777737" y="-123.5" />
+      <point x="2526.7949938704605" y="34509.0" />
+      <point x="2391.906104981571" y="34509.0" />
+      <point x="-119.66666666666697" y="201.5" />
+    </edge>
+    <edge source="papeleriaconant.ReporteDeVentas" target="javax.swing.WindowConstants">
+      <point x="0.0" y="-136.5" />
+      <point x="12094.169336219336" y="34619.0" />
+      <point x="12547.194518846754" y="34619.0" />
+      <point x="12547.194518846754" y="14959.0" />
+      <point x="12608.9766700301" y="14959.0" />
+      <point x="34.933333333332484" y="70.5" />
+    </edge>
+    <edge source="java.awt.Frame" target="java.io.Serializable">
+      <point x="82.20000000000073" y="-786.5" />
+      <point x="4177.261491458672" y="7160.0" />
+      <point x="4139.9448247920045" y="7160.0" />
+      <point x="4139.9448247920045" y="1931.0" />
+      <point x="8283.454517679982" y="1931.0" />
+      <point x="8283.454517679982" y="105.0" />
+      <point x="2324.0449938704587" y="105.0" />
+      <point x="28.777777777777374" y="17.5" />
+    </edge>
+    <edge source="java.awt.Component.FlipSubRegionBufferStrategy" target="java.awt.Component">
+      <point x="131.25" y="58.0" />
+      <point x="7521.917658730158" y="21919.0" />
+      <point x="6702.288002556027" y="21919.0" />
+      <point x="102.45535714285688" y="-5037.5" />
+    </edge>
+    <edge source="papeleriaconant.Catalogos" target="papeleriaconant.Producto">
+      <point x="-119.66666666666697" y="-123.5" />
+      <point x="2486.906104981571" y="34519.0" />
+      <point x="1722.103554950736" y="34519.0" />
+      <point x="1722.103554950736" y="34001.0" />
+      <point x="1815.7870573625241" y="34001.0" />
+      <point x="101.71428571428623" y="188.0" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.FocusPropertyChangeListener" target="javax.swing.JInternalFrame">
+      <point x="51.375" y="31.5" />
+      <point x="9162.779517679983" y="14889.0" />
+      <point x="10881.15891955267" y="14889.0" />
+      <point x="-223.31818181818153" y="-1475.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.JDesktopIcon" target="javax.swing.JInternalFrame.JDesktopIcon.AccessibleJDesktopIcon">
+      <point x="-164.4000000000001" y="-162.5" />
+      <point x="10898.76776446079" y="10618.0" />
+      <point x="9854.109431127456" y="10618.0" />
+      <point x="-105.0" y="110.0" />
+    </edge>
+    <edge source="papeleriaconant.Main" target="javax.swing.WindowConstants">
+      <point x="62.42499999999927" y="-45.0" />
+      <point x="8889.002507107847" y="35022.0" />
+      <point x="12702.1266700301" y="35022.0" />
+      <point x="12702.1266700301" y="14959.0" />
+      <point x="12626.443336696768" y="14959.0" />
+      <point x="52.399999999999636" y="70.5" />
+    </edge>
+    <edge source="javax.swing.JFrame.AccessibleJFrame" target="java.awt.Frame.AccessibleAWTFrame">
+      <point x="0.0" y="-58.0" />
+      <point x="3648.14618434665" y="14969.0" />
+      <point x="3615.628327203793" y="14969.0" />
+      <point x="3615.628327203793" y="7160.0" />
+      <point x="3829.1448247920057" y="7160.0" />
+      <point x="-85.79999999999927" y="58.0" />
+    </edge>
+    <edge source="java.awt.Dialog" target="java.awt.Window">
+      <point x="146.75" y="747.5" />
+      <point x="2662.5033272037927" y="10578.0" />
+      <point x="3032.7949938704605" y="10578.0" />
+      <point x="-171.41666666666606" y="-1995.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="java.awt.Container">
+      <point x="-35.0" y="-643.5" />
+      <point x="6300.33264541317" y="32464.0" />
+      <point x="5303.44514541317" y="32464.0" />
+      <point x="5303.44514541317" y="22149.0" />
+      <point x="5482.9134920634915" y="22149.0" />
+      <point x="-227.14999999999964" y="1839.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.JDesktopIcon.AccessibleJDesktopIcon" target="javax.swing.JInternalFrame.JDesktopIcon">
+      <point x="105.0" y="110.0" />
+      <point x="10064.109431127456" y="10608.0" />
+      <point x="10980.967764460791" y="10608.0" />
+      <point x="-82.19999999999982" y="-162.5" />
+    </edge>
+    <edge source="papeleriaconant.InserteUnUsuario" target="java.awt.Window">
+      <point x="-141.69230769230853" y="-123.5" />
+      <point x="10890.886475799525" y="35709.0" />
+      <point x="1991.572771648238" y="35709.0" />
+      <point x="1991.572771648238" y="14899.0" />
+      <point x="3059.011660537126" y="14899.0" />
+      <point x="-145.20000000000073" y="1995.5" />
+    </edge>
+    <edge source="papeleriaconant.Usuarios" target="java.io.Serializable">
+      <point x="201.33333333333394" y="-136.0" />
+      <point x="14060.697896176487" y="32544.0" />
+      <point x="14008.614562843153" y="32544.0" />
+      <point x="14008.614562843153" y="55.0" />
+      <point x="2365.15610498157" y="55.0" />
+      <point x="69.88888888888869" y="17.5" />
+    </edge>
+    <edge source="papeleriaconant.EsUnUsuario" target="papeleriaconant.VentasProducidas">
+      <point x="144.11764705882342" y="-188.5" />
+      <point x="6663.450292471994" y="36066.0" />
+      <point x="13692.114562843153" y="36066.0" />
+      <point x="13692.114562843153" y="34639.0" />
+      <point x="13804.958060861492" y="34639.0" />
+      <point x="108.18181818181802" y="214.0" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="javax.swing.JInternalFrame">
+      <point x="-256.88888888888914" y="1475.5" />
+      <point x="10847.588212481962" y="17960.0" />
+      <point x="10795.477101370852" y="17960.0" />
+      <point x="10795.477101370852" y="16464.5" />
+      <point x="-289.0" y="-0.0" />
+    </edge>
+    <edge source="java.awt.Container" target="java.awt.Container.DropTargetEventTargetFilter">
+      <point x="14.75" y="-1839.5" />
+      <point x="5724.813492063491" y="18000.0" />
+      <point x="6323.145145413171" y="18000.0" />
+      <point x="-34.875" y="45.0" />
+    </edge>
+    <edge source="java.awt.Dialog.ModalityType" target="java.io.Serializable">
+      <point x="0.0" y="-97.0" />
+      <point x="2025.8244811582917" y="135.0" />
+      <point x="2291.15610498157" y="135.0" />
+      <point x="-4.111111111111313" y="17.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent.AccessibleAWTComponentHandler" target="java.io.Serializable">
+      <point x="9.094947017729282E-13" y="-84.0" />
+      <point x="957.889788270315" y="105.0" />
+      <point x="2266.489438314904" y="105.0" />
+      <point x="-28.777777777777374" y="17.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="java.awt.Component">
+      <point x="-89.39999999999964" y="-500.5" />
+      <point x="8520.01776446079" y="32324.0" />
+      <point x="6734.83264541317" y="32324.0" />
+      <point x="135.0" y="5037.5" />
+    </edge>
+    <edge source="java.awt.Dialog.ModalityType" target="java.awt.Dialog">
+      <point x="114.75" y="97.0" />
+      <point x="2140.5744811582917" y="8883.0" />
+      <point x="2385.3088827593474" y="8883.0" />
+      <point x="-130.44444444444525" y="-747.5" />
+    </edge>
+    <edge source="papeleriaconant.Main" target="javax.swing.JFrame">
+      <point x="-5.674999999999272" y="-45.0" />
+      <point x="8821.077507107848" y="33971.0" />
+      <point x="8688.300117401966" y="33971.0" />
+      <point x="78.88235294117658" y="500.5" />
+    </edge>
+    <edge source="java.awt.Frame" target="java.awt.MenuContainer">
+      <point x="164.39999999999964" y="-786.5" />
+      <point x="4259.461491458671" y="7160.0" />
+      <point x="7820.06498015873" y="7160.0" />
+      <point x="-72.0" y="57.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="javax.swing.JDialog">
+      <point x="-238.0" y="643.5" />
+      <point x="6097.33264541317" y="33871.0" />
+      <point x="6017.83264541317" y="33871.0" />
+      <point x="6017.83264541317" y="33207.5" />
+      <point x="-297.5" y="-0.0" />
+    </edge>
+    <edge source="javax.swing.JComponent.ActionStandin" target="javax.swing.JComponent">
+      <point x="210.375" y="123.0" />
+      <point x="11298.885880556416" y="2257.0" />
+      <point x="10852.129301609048" y="2257.0" />
+      <point x="109.42105263157873" y="-2346.5" />
+    </edge>
+    <edge source="javax.swing.JDialog.AccessibleJDialog" target="javax.swing.JDialog">
+      <point x="-107.25" y="58.0" />
+      <point x="1093.322771648238" y="18100.0" />
+      <point x="1129.4964120935929" y="18100.0" />
+      <point x="1129.4964120935929" y="32504.0" />
+      <point x="6160.33264541317" y="32504.0" />
+      <point x="-175.0" y="-643.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="java.beans.JavaBean">
+      <point x="275.86363636363603" y="-1475.5" />
+      <point x="11380.340737734488" y="14969.0" />
+      <point x="13085.711785065374" y="14969.0" />
+      <point x="13085.711785065374" y="2307.0" />
+      <point x="13057.461785065374" y="2307.0" />
+      <point x="-33.75" y="57.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="javax.swing.RootPaneContainer">
+      <point x="-144.5" y="-1475.5" />
+      <point x="10959.977101370852" y="14859.0" />
+      <point x="10308.321184346649" y="14859.0" />
+      <point x="10308.321184346649" y="10628.0" />
+      <point x="9631.459431127456" y="10628.0" />
+      <point x="9631.459431127456" y="8883.0" />
+      <point x="9118.959431127456" y="8883.0" />
+      <point x="9118.959431127456" y="7130.0" />
+      <point x="8962.209431127456" y="7130.0" />
+      <point x="8962.209431127456" y="2317.0" />
+      <point x="8659.543336696766" y="2317.0" />
+      <point x="100.0" y="109.5" />
+    </edge>
+    <edge source="java.awt.Dialog.AccessibleAWTDialog" target="java.awt.Window.AccessibleAWTWindow">
+      <point x="0.0" y="-58.0" />
+      <point x="2968.741726585218" y="7160.0" />
+      <point x="3240.9614914586728" y="7160.0" />
+      <point x="3240.9614914586728" y="2317.0" />
+      <point x="3325.56999387046" y="2317.0" />
+      <point x="-171.60000000000036" y="58.0" />
+    </edge>
+    <edge source="papeleriaconant.Catalogos" target="papeleriaconant.Main">
+      <point x="44.875" y="123.5" />
+      <point x="2651.447771648238" y="35002.0" />
+      <point x="8786.852507107847" y="35002.0" />
+      <point x="-39.725000000000364" y="-45.0" />
+    </edge>
+    <edge source="java.awt.Window.WindowDisposerRecord" target="java.awt.Window">
+      <point x="34.91666666666606" y="97.5" />
+      <point x="3134.5866605371266" y="10508.0" />
+      <point x="3173.9616605371266" y="10508.0" />
+      <point x="-30.25" y="-1995.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.io.Serializable">
+      <point x="-331.4732142857147" y="-5037.5" />
+      <point x="6268.3594311274555" y="22139.0" />
+      <point x="8.222222222222626" y="22139.0" />
+      <point x="8.222222222222626" y="65.0" />
+      <point x="2233.6005494260153" y="65.0" />
+      <point x="-61.66666666666606" y="17.5" />
+    </edge>
+    <edge source="java.awt.Container.DropTargetEventTargetFilter" target="java.awt.Container.EventTargetFilter">
+      <point x="-69.75" y="-45.0" />
+      <point x="6288.270145413171" y="14949.0" />
+      <point x="5685.992338301148" y="14949.0" />
+      <point x="39.85714285714312" y="31.5" />
+    </edge>
+    <edge source="papeleriaconant.InserteUnUsuario" target="papeleriaconant.Ticket">
+      <point x="0.0" y="-123.5" />
+      <point x="11032.578783491834" y="35679.0" />
+      <point x="10857.434552722603" y="35679.0" />
+      <point x="-144.75" y="188.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent" target="java.awt.Container">
+      <point x="112.19999999999982" y="565.5" />
+      <point x="1567.7147882703139" y="1604.0" />
+      <point x="1488.514788270315" y="1604.0" />
+      <point x="1488.514788270315" y="7140.0" />
+      <point x="975.5727716482379" y="7140.0" />
+      <point x="975.5727716482379" y="18080.0" />
+      <point x="5429.813492063491" y="18080.0" />
+      <point x="-280.25" y="-1839.5" />
+    </edge>
+    <edge source="papeleriaconant.Piezas" target="javax.swing.JDialog">
+      <point x="75.5625" y="-71.0" />
+      <point x="4727.1507771729575" y="33961.0" />
+      <point x="6335.33264541317" y="33961.0" />
+      <point x="0.0" y="643.5" />
+    </edge>
+    <edge source="papeleriaconant.ReporteDeVentas" target="java.awt.Window">
+      <point x="-191.14285714285688" y="-136.5" />
+      <point x="11903.02647907648" y="34529.0" />
+      <point x="2807.572771648238" y="34529.0" />
+      <point x="2807.572771648238" y="14949.0" />
+      <point x="3180.011660537126" y="14949.0" />
+      <point x="-24.200000000000728" y="1995.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.JDesktopIcon" target="javax.swing.JComponent">
+      <point x="0.0" y="-162.5" />
+      <point x="11063.16776446079" y="7160.0" />
+      <point x="10815.655617398521" y="7160.0" />
+      <point x="72.94736842105249" y="2346.5" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="java.beans.JavaBean">
+      <point x="291.7894736842104" y="-2346.5" />
+      <point x="11034.49772266168" y="2307.0" />
+      <point x="12989.961785065374" y="2307.0" />
+      <point x="-101.25" y="57.5" />
+    </edge>
+    <edge source="javax.swing.RootPaneContainer" target="java.awt.Component">
+      <point x="-50.0" y="109.5" />
+      <point x="8509.543336696766" y="2297.0" />
+      <point x="8079.56498015873" y="2297.0" />
+      <point x="8079.56498015873" y="21949.0" />
+      <point x="6738.448716841742" y="21949.0" />
+      <point x="138.61607142857156" y="-5037.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="javax.swing.RootPaneContainer">
+      <point x="35.0" y="-643.5" />
+      <point x="6370.33264541317" y="32384.0" />
+      <point x="8090.56498015873" y="32384.0" />
+      <point x="8090.56498015873" y="2307.0" />
+      <point x="8559.543336696766" y="2307.0" />
+      <point x="0.0" y="109.5" />
+    </edge>
+    <edge source="java.awt.Container.AccessibleAWTContainer" target="java.awt.Container">
+      <point x="-112.19999999999982" y="110.5" />
+      <point x="5237.9879567439475" y="1911.0" />
+      <point x="3035.5033272037927" y="1911.0" />
+      <point x="3035.5033272037927" y="7150.0" />
+      <point x="1425.572771648238" y="7150.0" />
+      <point x="1425.572771648238" y="18070.0" />
+      <point x="5459.313492063491" y="18070.0" />
+      <point x="-250.75" y="-1839.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="java.awt.Frame">
+      <point x="-70.0" y="-643.5" />
+      <point x="6265.33264541317" y="32474.0" />
+      <point x="4620.685470060935" y="32474.0" />
+      <point x="4620.685470060935" y="8903.0" />
+      <point x="4197.811491458671" y="8903.0" />
+      <point x="102.75" y="786.5" />
+    </edge>
+    <edge source="papeleriaconant.EsUnUsuario" target="javax.swing.JFrame">
+      <point x="28.823529411763957" y="-188.5" />
+      <point x="6548.156174824934" y="36026.0" />
+      <point x="8548.874382107848" y="36026.0" />
+      <point x="8548.874382107848" y="33931.0" />
+      <point x="8556.829529166673" y="33931.0" />
+      <point x="-52.58823529411711" y="500.5" />
+    </edge>
+    <edge source="java.awt.Container.AccessibleAWTContainer.AccessibleContainerHandler" target="java.awt.Component">
+      <point x="128.33333333333303" y="58.0" />
+      <point x="7548.683112110672" y="1604.0" />
+      <point x="7737.56498015873" y="1604.0" />
+      <point x="7737.56498015873" y="21929.0" />
+      <point x="6714.341573984599" y="21929.0" />
+      <point x="114.50892857142844" y="-5037.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="javax.swing.JFrame.AccessibleJFrame">
+      <point x="-149.0" y="-500.5" />
+      <point x="8460.41776446079" y="32344.0" />
+      <point x="3653.64618434665" y="32344.0" />
+      <point x="3653.64618434665" y="18100.0" />
+      <point x="3755.39618434665" y="18100.0" />
+      <point x="107.25" y="58.0" />
+    </edge>
+    <edge source="java.awt.Dialog.AccessibleAWTDialog" target="java.awt.Dialog">
+      <point x="-85.79999999999927" y="58.0" />
+      <point x="2882.941726585219" y="8823.0" />
+      <point x="2646.197771648238" y="8823.0" />
+      <point x="130.44444444444525" y="-747.5" />
+    </edge>
+    <edge source="javax.swing.RootPaneContainer" target="java.awt.Container">
+      <point x="-100.0" y="109.5" />
+      <point x="8459.543336696766" y="2287.0" />
+      <point x="8057.56498015873" y="2287.0" />
+      <point x="8057.56498015873" y="10608.0" />
+      <point x="6508.02014541317" y="10608.0" />
+      <point x="6508.02014541317" y="18020.0" />
+      <point x="5783.813492063491" y="18020.0" />
+      <point x="73.75" y="-1839.5" />
+    </edge>
+    <edge source="java.awt.Container.DropTargetEventTargetFilter" target="java.awt.Component">
+      <point x="104.625" y="45.0" />
+      <point x="6462.645145413171" y="17980.0" />
+      <point x="6515.063492063491" y="17980.0" />
+      <point x="6515.063492063491" y="21869.0" />
+      <point x="6593.805859698885" y="21869.0" />
+      <point x="-6.0267857142853245" y="-5037.5" />
+    </edge>
+    <edge source="javax.swing.JDialog.AccessibleJDialog" target="java.awt.Dialog.AccessibleAWTDialog">
+      <point x="0.0" y="-58.0" />
+      <point x="1200.572771648238" y="14869.0" />
+      <point x="2830.7533272037927" y="14869.0" />
+      <point x="2830.7533272037927" y="8843.0" />
+      <point x="3054.5417265852175" y="8843.0" />
+      <point x="85.79999999999927" y="58.0" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.JDesktopIcon" target="javax.accessibility.Accessible">
+      <point x="164.4000000000001" y="-162.5" />
+      <point x="11227.56776446079" y="10668.0" />
+      <point x="12410.543336696766" y="10668.0" />
+      <point x="12410.543336696766" y="403.0" />
+      <point x="9716.787851013316" y="403.0" />
+      <point x="51.375" y="31.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.FocusPropertyChangeListener" target="java.awt.Component">
+      <point x="-154.125" y="31.5" />
+      <point x="8957.279517679983" y="14969.0" />
+      <point x="9111.404517679983" y="14969.0" />
+      <point x="9111.404517679983" y="21999.0" />
+      <point x="6798.716573984599" y="21999.0" />
+      <point x="198.88392857142844" y="-5037.5" />
+    </edge>
+    <edge source="papeleriaconant.Piezas" target="java.awt.Window">
+      <point x="-75.5625" y="-71.0" />
+      <point x="4576.0257771729575" y="33941.0" />
+      <point x="3195.611981158292" y="33941.0" />
+      <point x="3195.611981158292" y="14969.0" />
+      <point x="3228.4116605371273" y="14969.0" />
+      <point x="24.200000000000728" y="1995.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component.ProxyCapabilities">
+      <point x="162.72321428571468" y="-5037.5" />
+      <point x="6762.555859698885" y="21969.0" />
+      <point x="8464.56498015873" y="21969.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="javax.swing.RootPaneContainer">
+      <point x="0.0" y="-500.5" />
+      <point x="8609.41776446079" y="32384.0" />
+      <point x="8589.06498015873" y="32384.0" />
+      <point x="8589.06498015873" y="8853.0" />
+      <point x="8183.31498015873" y="8853.0" />
+      <point x="8183.31498015873" y="2317.0" />
+      <point x="8609.543336696766" y="2317.0" />
+      <point x="50.0" y="109.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="javax.swing.TransferHandler.HasGetTransferHandler">
+      <point x="140.0" y="-643.5" />
+      <point x="6475.33264541317" y="32424.0" />
+      <point x="9380.628945444005" y="32424.0" />
+      <point x="9380.628945444005" y="22139.0" />
+      <point x="12211.543336696766" y="22139.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="papeleriaconant.VentasFrame" target="papeleriaconant.Producto">
+      <point x="-59.100000000000364" y="-123.5" />
+      <point x="2150.9727716482375" y="34639.0" />
+      <point x="1700.103554950736" y="34639.0" />
+      <point x="1700.103554950736" y="33981.0" />
+      <point x="1764.929914505381" y="33981.0" />
+      <point x="50.85714285714312" y="188.0" />
+    </edge>
+    <edge source="java.awt.Dialog" target="java.awt.Dialog.ModalityType">
+      <point x="-260.8888888888887" y="-747.5" />
+      <point x="2254.864438314904" y="8903.0" />
+      <point x="1987.5744811582917" y="8903.0" />
+      <point x="-38.25" y="97.0" />
+    </edge>
+    <edge source="java.awt.Window" target="java.awt.Container">
+      <point x="193.60000000000036" y="1995.5" />
+      <point x="3397.811660537127" y="14959.0" />
+      <point x="3332.4295176799824" y="14959.0" />
+      <point x="3332.4295176799824" y="18040.0" />
+      <point x="5547.813492063491" y="18040.0" />
+      <point x="-162.25" y="-1839.5" />
+    </edge>
+    <edge source="java.awt.Frame.AccessibleAWTFrame" target="java.awt.Window.AccessibleAWTWindow">
+      <point x="0.0" y="-58.0" />
+      <point x="3914.944824792005" y="2317.0" />
+      <point x="3668.769993870461" y="2317.0" />
+      <point x="171.60000000000036" y="58.0" />
+    </edge>
+    <edge source="java.awt.Window" target="java.awt.Window">
+      <point x="-217.80000000000018" y="1995.5" />
+      <point x="2986.4116605371264" y="14739.0" />
+      <point x="2851.7116605371266" y="14739.0" />
+      <point x="2851.7116605371266" y="11196.875" />
+      <point x="-302.5" y="-1496.625" />
+    </edge>
+    <edge source="javax.swing.JFrame.AccessibleJFrame" target="javax.swing.JFrame">
+      <point x="-107.25" y="58.0" />
+      <point x="3540.89618434665" y="18100.0" />
+      <point x="3642.64618434665" y="18100.0" />
+      <point x="3642.64618434665" y="32354.0" />
+      <point x="8430.61776446079" y="32354.0" />
+      <point x="-178.79999999999927" y="-500.5" />
+    </edge>
+    <edge source="java.awt.Dialog" target="java.awt.Container">
+      <point x="20.964285714286234" y="747.5" />
+      <point x="2536.717612918079" y="10678.0" />
+      <point x="2818.572771648238" y="10678.0" />
+      <point x="2818.572771648238" y="18060.0" />
+      <point x="5488.813492063491" y="18060.0" />
+      <point x="-221.25" y="-1839.5" />
+    </edge>
+    <edge source="papeleriaconant.Clientes" target="papeleriaconant.Usuarios">
+      <point x="155.55555555555475" y="-110.5" />
+      <point x="13043.182225585655" y="34619.0" />
+      <point x="13388.776242679673" y="34619.0" />
+      <point x="13388.776242679673" y="34001.0" />
+      <point x="13812.903024381614" y="34001.0" />
+      <point x="-46.46153846153902" y="136.0" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="javax.swing.SwingContainer">
+      <point x="-170.77272727272702" y="-1475.5" />
+      <point x="10933.704374098124" y="14869.0" />
+      <point x="10252.154517679985" y="14869.0" />
+      <point x="69.33333333333394" y="44.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="javax.swing.SwingContainer">
+      <point x="29.799999999999272" y="-500.5" />
+      <point x="8639.21776446079" y="32434.0" />
+      <point x="10182.821184346649" y="32434.0" />
+      <point x="0.0" y="44.5" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="javax.swing.JComponent.ReadObjectCallback">
+      <point x="-255.31578947368416" y="-2346.5" />
+      <point x="10487.392459503784" y="2317.0" />
+      <point x="10473.260880556416" y="2317.0" />
+      <point x="-98.25" y="45.0" />
+    </edge>
+    <edge source="java.awt.Window.Type" target="java.awt.Window">
+      <point x="78.66666666666606" y="84.0" />
+      <point x="1668.913078760259" y="10618.0" />
+      <point x="2952.1283272037927" y="10618.0" />
+      <point x="-252.08333333333394" y="-1995.5" />
+    </edge>
+    <edge source="papeleriaconant.Catalogos" target="java.awt.Window">
+      <point x="39.88888888888869" y="-123.5" />
+      <point x="2646.4616605371266" y="34529.0" />
+      <point x="2701.572771648238" y="34529.0" />
+      <point x="2701.572771648238" y="14929.0" />
+      <point x="3131.611660537126" y="14929.0" />
+      <point x="-72.60000000000036" y="1995.5" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="java.io.Serializable">
+      <point x="328.26315789473665" y="-2346.5" />
+      <point x="11070.971406872206" y="2317.0" />
+      <point x="13409.364562843153" y="2317.0" />
+      <point x="13409.364562843153" y="85.0" />
+      <point x="2340.489438314904" y="85.0" />
+      <point x="45.222222222222626" y="17.5" />
+    </edge>
+    <edge source="java.awt.Dialog.AccessibleAWTDialog" target="java.awt.Window">
+      <point x="171.60000000000036" y="58.0" />
+      <point x="3140.3417265852186" y="8843.0" />
+      <point x="3319.6699938704605" y="8843.0" />
+      <point x="3319.6699938704605" y="10498.0" />
+      <point x="3234.4616605371266" y="10498.0" />
+      <point x="30.25" y="-1995.5" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="java.awt.Window">
+      <point x="-182.36842105263167" y="2346.5" />
+      <point x="10560.339827924836" y="7100.0" />
+      <point x="10219.709431127456" y="7100.0" />
+      <point x="10219.709431127456" y="10638.0" />
+      <point x="3476.4616605371266" y="10638.0" />
+      <point x="272.25" y="-1995.5" />
+    </edge>
+    <edge source="papeleriaconant.Piezas" target="javax.swing.JFrame">
+      <point x="125.9375" y="-71.0" />
+      <point x="4777.5257771729575" y="33971.0" />
+      <point x="8425.358940931377" y="33971.0" />
+      <point x="-184.05882352941262" y="500.5" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="java.awt.Component">
+      <point x="-36.473684210526244" y="2346.5" />
+      <point x="10706.234564766943" y="7140.0" />
+      <point x="10263.709431127456" y="7140.0" />
+      <point x="10263.709431127456" y="10678.0" />
+      <point x="9338.404517679983" y="10678.0" />
+      <point x="9338.404517679983" y="22009.0" />
+      <point x="6810.77014541317" y="22009.0" />
+      <point x="210.9375" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Window" target="java.awt.Dialog.ModalExclusionType">
+      <point x="-90.75" y="-1995.5" />
+      <point x="3113.4616605371266" y="10538.0" />
+      <point x="2819.7533272037927" y="10538.0" />
+      <point x="2819.7533272037927" y="8803.0" />
+      <point x="2512.9494811582917" y="8803.0" />
+      <point x="134.625" y="84.0" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent.AccessibleAWTFocusHandler" target="java.awt.Component">
+      <point x="-102.0" y="58.0" />
+      <point x="1221.389788270314" y="403.0" />
+      <point x="1144.514788270314" y="403.0" />
+      <point x="1144.514788270314" y="7110.0" />
+      <point x="730.9727716482375" y="7110.0" />
+      <point x="730.9727716482375" y="10678.0" />
+      <point x="627.2227716482375" y="10678.0" />
+      <point x="627.2227716482375" y="22099.0" />
+      <point x="6316.573716841741" y="22099.0" />
+      <point x="-283.25892857142935" y="-5037.5" />
+    </edge>
+    <edge source="papeleriaconant.Catalogos" target="javax.swing.JFrame">
+      <point x="119.66666666666697" y="-123.5" />
+      <point x="2726.239438314905" y="34589.0" />
+      <point x="8537.874382107848" y="34589.0" />
+      <point x="8537.874382107848" y="33941.0" />
+      <point x="8530.535411519613" y="33941.0" />
+      <point x="-78.88235294117658" y="500.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component.SingleBufferStrategy">
+      <point x="-54.24107142857156" y="-5037.5" />
+      <point x="6545.591573984599" y="21909.0" />
+      <point x="6231.688492063491" y="21909.0" />
+      <point x="-52.375" y="97.0" />
+    </edge>
+    <edge source="java.awt.Container.AccessibleAWTContainer.AccessibleContainerHandler" target="java.awt.Container.AccessibleAWTContainer">
+      <point x="0.0" y="58.0" />
+      <point x="7420.349778777339" y="1604.0" />
+      <point x="5560.562956743948" y="1604.0" />
+      <point x="210.375" y="-110.5" />
+    </edge>
+    <edge source="java.awt.Frame" target="java.awt.Window">
+      <point x="-73.39285714285688" y="786.5" />
+      <point x="4021.668634315815" y="8873.0" />
+      <point x="3714.14618434665" y="8873.0" />
+      <point x="3714.14618434665" y="10568.0" />
+      <point x="3375.6283272037927" y="10568.0" />
+      <point x="171.41666666666606" y="-1995.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="java.awt.Dialog.ModalityType">
+      <point x="-280.0" y="-643.5" />
+      <point x="6055.33264541317" y="32534.0" />
+      <point x="365.71275833125037" y="32534.0" />
+      <point x="365.71275833125037" y="10668.0" />
+      <point x="562.2083333333339" y="10668.0" />
+      <point x="562.2083333333339" y="8913.0" />
+      <point x="1911.0744811582917" y="8913.0" />
+      <point x="-114.75" y="97.0" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="java.awt.Component.BaselineResizeBehavior">
+      <point x="-328.2631578947371" y="-2346.5" />
+      <point x="10414.44509108273" y="2267.0" />
+      <point x="347.05555555555566" y="2267.0" />
+      <point x="131.33333333333303" y="97.0" />
+    </edge>
+    <edge source="java.awt.Frame" target="java.awt.Component">
+      <point x="132.10714285714312" y="786.5" />
+      <point x="4227.168634315814" y="8893.0" />
+      <point x="6940.02014541317" y="8893.0" />
+      <point x="6940.02014541317" y="21869.0" />
+      <point x="6642.02014541317" y="21869.0" />
+      <point x="42.1875" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Component.FlipSubRegionBufferStrategy" target="java.awt.Component.FlipBufferStrategy">
+      <point x="131.25" y="-58.0" />
+      <point x="7521.917658730158" y="18040.0" />
+      <point x="7444.436812079837" y="18040.0" />
+      <point x="215.41666666666697" y="266.5" />
+    </edge>
+    <edge source="java.awt.Container" target="java.io.Serializable">
+      <point x="-309.75" y="-1839.5" />
+      <point x="5400.313492063491" y="18090.0" />
+      <point x="898.5727716482379" y="18090.0" />
+      <point x="898.5727716482379" y="10658.0" />
+      <point x="423.2222222222226" y="10658.0" />
+      <point x="423.2222222222226" y="85.0" />
+      <point x="2250.0449938704587" y="85.0" />
+      <point x="-45.222222222222626" y="17.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="javax.swing.JComponent">
+      <point x="105.0" y="-643.5" />
+      <point x="6440.33264541317" y="32414.0" />
+      <point x="9369.628945444005" y="32414.0" />
+      <point x="9369.628945444005" y="22129.0" />
+      <point x="11763.16776446079" y="22129.0" />
+      <point x="11763.16776446079" y="7100.0" />
+      <point x="11034.49772266168" y="7100.0" />
+      <point x="291.7894736842104" y="2346.5" />
+    </edge>
+    <edge source="java.awt.Window" target="javax.accessibility.Accessible">
+      <point x="252.08333333333394" y="-1995.5" />
+      <point x="3456.2949938704605" y="10618.0" />
+      <point x="8194.31498015873" y="10618.0" />
+      <point x="8194.31498015873" y="8863.0" />
+      <point x="8653.043336696766" y="8863.0" />
+      <point x="8653.043336696766" y="7140.0" />
+      <point x="8993.959431127456" y="7140.0" />
+      <point x="8993.959431127456" y="2287.0" />
+      <point x="9296.209431127456" y="2287.0" />
+      <point x="9296.209431127456" y="373.0" />
+      <point x="9579.787851013316" y="373.0" />
+      <point x="-85.625" y="31.5" />
+    </edge>
+    <edge source="java.awt.Component.ProxyCapabilities" target="java.awt.Component">
+      <point x="61.33333333333303" y="17.5" />
+      <point x="8525.898313492064" y="14969.0" />
+      <point x="8578.06498015873" y="14969.0" />
+      <point x="8578.06498015873" y="21979.0" />
+      <point x="6774.6094311274555" y="21979.0" />
+      <point x="174.77678571428532" y="-5037.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.AccessibleJComponent" target="java.awt.Container.AccessibleAWTContainer">
+      <point x="-117.39999999999986" y="-214.5" />
+      <point x="9389.509431127455" y="7110.0" />
+      <point x="9161.709431127456" y="7110.0" />
+      <point x="9161.709431127456" y="2277.0" />
+      <point x="9139.709431127456" y="2277.0" />
+      <point x="9139.709431127456" y="1911.0" />
+      <point x="5574.587956743948" y="1911.0" />
+      <point x="224.39999999999964" y="110.5" />
+    </edge>
+    <edge source="papeleriaconant.InserteUnUsuario" target="papeleriaconant.Usuarios">
+      <point x="236.15384615384573" y="-123.5" />
+      <point x="11268.73262964568" y="35729.0" />
+      <point x="14062.026242679673" y="35729.0" />
+      <point x="14062.026242679673" y="33991.0" />
+      <point x="14091.672255150845" y="33991.0" />
+      <point x="232.30769230769147" y="136.0" />
+    </edge>
+    <edge source="javax.swing.JComponent.AccessibleJComponent.AccessibleContainerHandler" target="java.awt.Component">
+      <point x="-128.33333333333337" y="-58.0" />
+      <point x="9199.460003363432" y="32294.0" />
+      <point x="6869.83264541317" y="32294.0" />
+      <point x="270.0" y="5037.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="java.awt.Container">
+      <point x="-119.20000000000073" y="-500.5" />
+      <point x="8490.21776446079" y="32334.0" />
+      <point x="5609.725777172956" y="32334.0" />
+      <point x="5609.725777172956" y="22149.0" />
+      <point x="5547.813492063491" y="22149.0" />
+      <point x="-162.25" y="1839.5" />
+    </edge>
+    <edge source="papeleriaconant.VentasFrame" target="javax.swing.JFrame">
+      <point x="137.89999999999964" y="-123.5" />
+      <point x="2347.9727716482375" y="34569.0" />
+      <point x="8515.874382107848" y="34569.0" />
+      <point x="8515.874382107848" y="33961.0" />
+      <point x="8477.947176225496" y="33961.0" />
+      <point x="-131.4705882352937" y="500.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent.AccessibleAWTFocusHandler" target="java.awt.Component.AccessibleAWTComponent">
+      <point x="102.0" y="58.0" />
+      <point x="1425.389788270314" y="403.0" />
+      <point x="1502.264788270314" y="403.0" />
+      <point x="46.75" y="-565.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.JDesktopIcon" target="java.awt.Container">
+      <point x="-137.0" y="162.5" />
+      <point x="10926.16776446079" y="14969.0" />
+      <point x="10171.821184346649" y="14969.0" />
+      <point x="10171.821184346649" y="18080.0" />
+      <point x="5960.813492063491" y="18080.0" />
+      <point x="250.75" y="-1839.5" />
+    </edge>
+    <edge source="java.awt.Window" target="java.awt.Frame">
+      <point x="151.25" y="-1995.5" />
+      <point x="3355.4616605371266" y="10558.0" />
+      <point x="3703.14618434665" y="10558.0" />
+      <point x="3703.14618434665" y="8863.0" />
+      <point x="3992.3114914586718" y="8863.0" />
+      <point x="-102.75" y="786.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent" target="javax.accessibility.Accessible">
+      <point x="233.75" y="-565.5" />
+      <point x="1689.264788270314" y="343.0" />
+      <point x="9477.037851013316" y="343.0" />
+      <point x="-188.375" y="31.5" />
+    </edge>
+    <edge source="java.awt.Container.MouseEventTargetFilter" target="java.awt.Component">
+      <point x="104.625" y="45.0" />
+      <point x="5928.145145413171" y="17990.0" />
+      <point x="6504.063492063491" y="17990.0" />
+      <point x="6504.063492063491" y="21879.0" />
+      <point x="6581.752288270313" y="21879.0" />
+      <point x="-18.080357142856883" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Window" target="java.io.Serializable">
+      <point x="50.41666666666606" y="-1995.5" />
+      <point x="3254.6283272037927" y="10508.0" />
+      <point x="3338.4536478249593" y="10508.0" />
+      <point x="3338.4536478249593" y="7140.0" />
+      <point x="3024.5033272037927" y="7140.0" />
+      <point x="3024.5033272037927" y="125.0" />
+      <point x="2307.6005494260153" y="125.0" />
+      <point x="12.33333333333394" y="17.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="java.beans.JavaBean">
+      <point x="178.79999999999927" y="-500.5" />
+      <point x="8788.21776446079" y="32524.0" />
+      <point x="13368.14234062093" y="32524.0" />
+      <point x="13368.14234062093" y="2297.0" />
+      <point x="13192.461785065374" y="2297.0" />
+      <point x="101.25" y="57.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.ReadObjectCallback" target="javax.swing.JComponent">
+      <point x="176.8499999999999" y="45.0" />
+      <point x="10748.360880556416" y="2317.0" />
+      <point x="10742.70824897747" y="2317.0" />
+      <point x="0.0" y="-2346.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="java.awt.Component">
+      <point x="-64.22222222222217" y="1475.5" />
+      <point x="11040.25487914863" y="18100.0" />
+      <point x="11125.819279612304" y="18100.0" />
+      <point x="11125.819279612304" y="22099.0" />
+      <point x="6907.198716841742" y="22099.0" />
+      <point x="307.36607142857156" y="-5037.5" />
+    </edge>
+    <edge source="papeleriaconant.VentasFrame" target="java.awt.Window">
+      <point x="-19.700000000000728" y="-123.5" />
+      <point x="2190.372771648237" y="14919.0" />
+      <point x="3107.4116605371273" y="14919.0" />
+      <point x="-96.79999999999927" y="1995.5" />
+    </edge>
+    <edge source="java.awt.Component.BaselineResizeBehavior" target="java.awt.Component">
+      <point x="-131.33333333333303" y="97.0" />
+      <point x="84.3888888888896" y="2317.0" />
+      <point x="144.55555555555566" y="2317.0" />
+      <point x="144.55555555555566" y="22129.0" />
+      <point x="6280.413002556027" y="22129.0" />
+      <point x="-319.4196428571431" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent.AccessibleAWTComponentHandler" target="java.awt.Component">
+      <point x="-128.33333333333303" y="84.0" />
+      <point x="829.556454936981" y="403.0" />
+      <point x="904.5994811582932" y="403.0" />
+      <point x="904.5994811582932" y="7100.0" />
+      <point x="573.2083333333339" y="7100.0" />
+      <point x="573.2083333333339" y="10678.0" />
+      <point x="510.735300982481" y="10678.0" />
+      <point x="510.735300982481" y="22109.0" />
+      <point x="6304.52014541317" y="22109.0" />
+      <point x="-295.3125" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent" target="java.awt.Component.AccessibleAWTComponent.AccessibleAWTComponentHandler">
+      <point x="-233.75" y="-565.5" />
+      <point x="1221.764788270314" y="393.0" />
+      <point x="957.889788270314" y="393.0" />
+      <point x="0.0" y="84.0" />
+    </edge>
+    <edge source="papeleriaconant.Ticket" target="papeleriaconant.Producto">
+      <point x="-271.40625" y="-188.5" />
+      <point x="10730.778302722603" y="35262.0" />
+      <point x="1555.853554950736" y="35262.0" />
+      <point x="1555.853554950736" y="33921.0" />
+      <point x="1612.3584859339517" y="33921.0" />
+      <point x="-101.71428571428623" y="188.0" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="java.awt.Window">
+      <point x="-275.86363636363603" y="-1475.5" />
+      <point x="10828.613465007216" y="14909.0" />
+      <point x="3494.611660537126" y="14909.0" />
+      <point x="290.39999999999964" y="1995.5" />
+    </edge>
+    <edge source="papeleriaconant.AgregarDatos" target="javax.swing.JInternalFrame">
+      <point x="89.75" y="-201.5" />
+      <point x="2601.322771648238" y="33981.0" />
+      <point x="11147.819279612304" y="33981.0" />
+      <point x="11147.819279612304" y="18100.0" />
+      <point x="11168.699323593075" y="18100.0" />
+      <point x="64.22222222222217" y="1475.5" />
+    </edge>
+    <edge source="java.awt.Container.EventTargetFilter" target="java.awt.Container">
+      <point x="-119.57142857142844" y="31.5" />
+      <point x="5526.563766872578" y="14959.0" />
+      <point x="5275.742338301148" y="14959.0" />
+      <point x="5275.742338301148" y="18020.0" />
+      <point x="5606.813492063491" y="18020.0" />
+      <point x="-103.25" y="-1839.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="javax.swing.SwingContainer">
+      <point x="70.0" y="-643.5" />
+      <point x="6405.33264541317" y="32394.0" />
+      <point x="8640.91776446079" y="32394.0" />
+      <point x="8640.91776446079" y="22069.0" />
+      <point x="10160.821184346649" y="22069.0" />
+      <point x="10160.821184346649" y="14969.0" />
+      <point x="10113.487851013317" y="14969.0" />
+      <point x="-69.33333333333394" y="44.5" />
+    </edge>
+    <edge source="java.awt.Container.MouseEventTargetFilter" target="java.awt.Container.EventTargetFilter">
+      <point x="-69.75" y="-45.0" />
+      <point x="5753.770145413171" y="14969.0" />
+      <point x="5606.278052586862" y="14969.0" />
+      <point x="-39.85714285714312" y="31.5" />
+    </edge>
+    <edge source="papeleriaconant.EsUnUsuario" target="javax.swing.WindowConstants">
+      <point x="115.29411764705947" y="-188.5" />
+      <point x="6634.62676306023" y="36056.0" />
+      <point x="13226.765558918989" y="36056.0" />
+      <point x="13226.765558918989" y="14919.0" />
+      <point x="12696.310003363433" y="14919.0" />
+      <point x="122.26666666666642" y="70.5" />
+    </edge>
+    <edge source="papeleriaconant.InserteUnUsuario" target="javax.swing.WindowConstants">
+      <point x="94.46153846153902" y="-123.5" />
+      <point x="11127.040321953373" y="35699.0" />
+      <point x="13215.765558918989" y="35699.0" />
+      <point x="13215.765558918989" y="14929.0" />
+      <point x="12678.843336696766" y="14929.0" />
+      <point x="104.79999999999927" y="70.5" />
+    </edge>
+    <edge source="papeleriaconant.Ticket" target="javax.swing.JFrame">
+      <point x="-90.46875" y="-188.5" />
+      <point x="10911.715802722603" y="35212.0" />
+      <point x="8592.874382107848" y="35212.0" />
+      <point x="8592.874382107848" y="33971.0" />
+      <point x="8662.005999754907" y="33971.0" />
+      <point x="52.58823529411711" y="500.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent.AccessibleAWTComponentHandler" target="java.awt.Component.AccessibleAWTComponent">
+      <point x="128.33333333333303" y="84.0" />
+      <point x="1086.223121603647" y="383.0" />
+      <point x="1315.264788270314" y="383.0" />
+      <point x="-140.25" y="-565.5" />
+    </edge>
+    <edge source="papeleriaconant.Clientes" target="papeleriaconant.AgregarClientes">
+      <point x="0.0" y="-110.5" />
+      <point x="12887.6266700301" y="34619.0" />
+      <point x="12902.598892252323" y="34619.0" />
+      <point x="-116.66666666666606" y="110.5" />
+    </edge>
+    <edge source="papeleriaconant.Usuarios" target="papeleriaconant.Persona">
+      <point x="-201.33333333333394" y="-136.0" />
+      <point x="13658.03122950982" y="32544.0" />
+      <point x="13710.114562843153" y="32544.0" />
+      <point x="-96.0" y="149.0" />
+    </edge>
+    <edge source="papeleriaconant.AgregarClientes" target="papeleriaconant.Usuarios">
+      <point x="-29.16666666666606" y="-110.5" />
+      <point x="12990.098892252323" y="33951.0" />
+      <point x="13580.595332073923" y="33951.0" />
+      <point x="-278.7692307692305" y="136.0" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="javax.swing.JInternalFrame">
+      <point x="255.31578947368416" y="2346.5" />
+      <point x="10998.024038451153" y="7110.0" />
+      <point x="11741.16776446079" y="7110.0" />
+      <point x="11741.16776446079" y="14849.0" />
+      <point x="11275.249828643578" y="14849.0" />
+      <point x="170.77272727272702" y="-1475.5" />
+    </edge>
+    <edge source="papeleriaconant.Piezas" target="papeleriaconant.Producto">
+      <point x="-176.3125" y="-71.0" />
+      <point x="4475.2757771729575" y="33961.0" />
+      <point x="1942.929914505381" y="33961.0" />
+      <point x="228.85714285714312" y="188.0" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="java.awt.Frame">
+      <point x="-29.799999999999272" y="-500.5" />
+      <point x="8579.61776446079" y="32304.0" />
+      <point x="7726.56498015873" y="32304.0" />
+      <point x="7726.56498015873" y="8873.0" />
+      <point x="4285.882920030101" y="8873.0" />
+      <point x="190.82142857142935" y="786.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="javax.swing.WindowConstants">
+      <point x="210.0" y="-643.5" />
+      <point x="6545.33264541317" y="32474.0" />
+      <point x="12465.1266700301" y="32474.0" />
+      <point x="12465.1266700301" y="14889.0" />
+      <point x="12486.710003363434" y="14889.0" />
+      <point x="-87.33333333333394" y="70.5" />
+    </edge>
+    <edge source="java.awt.Container.DropTargetEventTargetFilter" target="java.awt.Container">
+      <point x="34.875" y="45.0" />
+      <point x="6392.895145413171" y="18010.0" />
+      <point x="5754.313492063491" y="18010.0" />
+      <point x="44.25" y="-1839.5" />
+    </edge>
+    <edge source="java.awt.Container" target="java.awt.Container">
+      <point x="-292.04999999999995" y="1839.5" />
+      <point x="5418.013492063492" y="21819.0" />
+      <point x="5365.563492063491" y="21819.0" />
+      <point x="5365.563492063491" y="19959.5" />
+      <point x="-324.5" y="-0.0" />
+    </edge>
+    <edge source="papeleriaconant.Clientes" target="java.awt.Window">
+      <point x="-155.55555555555475" y="-110.5" />
+      <point x="12732.071114474546" y="34499.0" />
+      <point x="3184.611981158292" y="34499.0" />
+      <point x="3184.611981158292" y="14959.0" />
+      <point x="3204.2116605371266" y="14959.0" />
+      <point x="0.0" y="1995.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component.AWTTreeLock">
+      <point x="18.080357142856883" y="-5037.5" />
+      <point x="6617.913002556027" y="21849.0" />
+      <point x="6793.02014541317" y="21849.0" />
+      <point x="-45.5" y="31.5" />
+    </edge>
+    <edge source="papeleriaconant.AgregarDatos" target="papeleriaconant.Producto">
+      <point x="-149.58333333333303" y="-201.5" />
+      <point x="2361.989438314905" y="34001.0" />
+      <point x="1841.2156287910948" y="34001.0" />
+      <point x="127.14285714285688" y="188.0" />
+    </edge>
+    <edge source="java.awt.Container" target="javax.accessibility.Accessible">
+      <point x="162.25" y="-1839.5" />
+      <point x="5872.313492063491" y="18050.0" />
+      <point x="7903.06498015873" y="18050.0" />
+      <point x="7903.06498015873" y="10628.0" />
+      <point x="8351.06498015873" y="10628.0" />
+      <point x="8351.06498015873" y="8873.0" />
+      <point x="8804.293336696766" y="8873.0" />
+      <point x="8804.293336696766" y="7150.0" />
+      <point x="9139.709431127456" y="7150.0" />
+      <point x="9139.709431127456" y="2297.0" />
+      <point x="9307.209431127456" y="2297.0" />
+      <point x="9307.209431127456" y="383.0" />
+      <point x="9614.037851013316" y="383.0" />
+      <point x="-51.375" y="31.5" />
+    </edge>
+    <edge source="java.awt.Window" target="javax.swing.JComponent">
+      <point x="292.41666666666606" y="-1995.5" />
+      <point x="3496.6283272037927" y="10648.0" />
+      <point x="10230.709431127456" y="10648.0" />
+      <point x="10230.709431127456" y="7110.0" />
+      <point x="10596.813512135363" y="7110.0" />
+      <point x="-145.89473684210543" y="2346.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.AccessibleJComponent.AccessibleContainerHandler" target="javax.swing.JComponent.AccessibleJComponent">
+      <point x="0.0" y="-58.0" />
+      <point x="9327.793336696766" y="32284.0" />
+      <point x="8788.307301982042" y="32284.0" />
+      <point x="8788.307301982042" y="8913.0" />
+      <point x="9506.909431127457" y="8913.0" />
+      <point x="0.0" y="214.5" />
+    </edge>
+    <edge source="papeleriaconant.ReporteDeVentas" target="papeleriaconant.Main">
+      <point x="55.75" y="136.5" />
+      <point x="12149.919336219336" y="35002.0" />
+      <point x="8866.302507107848" y="35002.0" />
+      <point x="39.725000000000364" y="-45.0" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.AccessibleJInternalFrame" target="javax.swing.JComponent.AccessibleJComponent">
+      <point x="-105.0" y="-123.0" />
+      <point x="11393.66776446079" y="10598.0" />
+      <point x="10179.609431127456" y="10598.0" />
+      <point x="10179.609431127456" y="8863.0" />
+      <point x="9741.709431127456" y="8863.0" />
+      <point x="234.80000000000018" y="214.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="javax.accessibility.Accessible">
+      <point x="175.0" y="-643.5" />
+      <point x="6510.33264541317" y="32454.0" />
+      <point x="12110.961638132174" y="32454.0" />
+      <point x="12110.961638132174" y="22149.0" />
+      <point x="12432.543336696766" y="22149.0" />
+      <point x="12432.543336696766" y="383.0" />
+      <point x="9785.287851013316" y="383.0" />
+      <point x="119.875" y="31.5" />
+    </edge>
+    <edge source="java.awt.Component.SingleBufferStrategy" target="java.awt.Component.SingleBufferStrategy">
+      <point x="-157.125" y="97.0" />
+      <point x="6126.938492063491" y="20076.5" />
+      <point x="6054.563492063491" y="20076.5" />
+      <point x="6054.563492063491" y="19959.5" />
+      <point x="-209.5" y="-0.0" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="javax.swing.TransferHandler.HasGetTransferHandler">
+      <point x="89.39999999999964" y="-500.5" />
+      <point x="8698.81776446079" y="32464.0" />
+      <point x="12222.543336696766" y="32464.0" />
+      <point x="12222.543336696766" y="2297.0" />
+      <point x="12337.210003363434" y="2297.0" />
+      <point x="125.66666666666606" y="31.5" />
+    </edge>
+    <edge source="java.awt.Window" target="java.awt.Window.WindowDisposerRecord">
+      <point x="-70.58333333333394" y="-1995.5" />
+      <point x="3133.6283272037927" y="10528.0" />
+      <point x="2994.9199938704605" y="10528.0" />
+      <point x="-104.75" y="97.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.JDesktopIcon" target="javax.swing.JInternalFrame.JDesktopIcon">
+      <point x="-182.66666666666652" y="162.5" />
+      <point x="10880.501097794124" y="12876.0" />
+      <point x="10837.66776446079" y="12876.0" />
+      <point x="10837.66776446079" y="12693.5" />
+      <point x="-205.5" y="-0.0" />
+    </edge>
+    <edge source="java.awt.Dialog" target="java.awt.Dialog.ModalExclusionType">
+      <point x="-65.22222222222263" y="-747.5" />
+      <point x="2450.53110498157" y="8873.0" />
+      <point x="2333.4494811582917" y="8873.0" />
+      <point x="-44.875" y="84.0" />
+    </edge>
+    <edge source="java.awt.Dialog" target="java.awt.Component">
+      <point x="-62.89285714285688" y="747.5" />
+      <point x="2452.8604700609358" y="10668.0" />
+      <point x="964.5727716482379" y="10668.0" />
+      <point x="964.5727716482379" y="22069.0" />
+      <point x="6352.7344311274555" y="22069.0" />
+      <point x="-247.09821428571468" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Container.AccessibleAWTContainer" target="java.awt.Container.AccessibleAWTContainer">
+      <point x="-224.4000000000001" y="110.5" />
+      <point x="5125.787956743948" y="1878.0" />
+      <point x="5049.687956743948" y="1878.0" />
+      <point x="5049.687956743948" y="1747.5" />
+      <point x="-280.5" y="-0.0" />
+    </edge>
+    <edge source="java.awt.Container.DropTargetEventTargetFilter" target="java.awt.Container.DropTargetEventTargetFilter">
+      <point x="-104.625" y="45.0" />
+      <point x="6253.395145413171" y="16529.5" />
+      <point x="6198.520145413171" y="16529.5" />
+      <point x="6198.520145413171" y="16464.5" />
+      <point x="-139.5" y="-0.0" />
+    </edge>
+    <edge source="java.awt.Container.AccessibleAWTContainer" target="java.awt.Container.AccessibleAWTContainer.AccessibleContainerHandler">
+      <point x="70.125" y="-110.5" />
+      <point x="5420.312956743948" y="1594.0" />
+      <point x="7292.0164454440055" y="1594.0" />
+      <point x="-128.33333333333303" y="58.0" />
+    </edge>
+    <edge source="javax.swing.JComponent.ActionStandin" target="javax.swing.JComponent.ActionStandin">
+      <point x="-210.375" y="123.0" />
+      <point x="10878.135880556416" y="2217.0" />
+      <point x="10788.010880556416" y="2217.0" />
+      <point x="10788.010880556416" y="2074.0" />
+      <point x="-280.5" y="-0.0" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="java.awt.Container">
+      <point x="-109.42105263157919" y="2346.5" />
+      <point x="10633.28719634589" y="7120.0" />
+      <point x="10241.709431127456" y="7120.0" />
+      <point x="10241.709431127456" y="10658.0" />
+      <point x="8567.06498015873" y="10658.0" />
+      <point x="8567.06498015873" y="18060.0" />
+      <point x="5901.813492063491" y="18060.0" />
+      <point x="191.75" y="-1839.5" />
+    </edge>
+    <edge source="papeleriaconant.VentasFrame" target="papeleriaconant.Main">
+      <point x="98.5" y="123.5" />
+      <point x="2308.572771648238" y="35042.0" />
+      <point x="8741.452507107848" y="35042.0" />
+      <point x="-85.125" y="-45.0" />
+    </edge>
+    <edge source="papeleriaconant.Clientes" target="javax.swing.WindowConstants">
+      <point x="-38.88888888888869" y="-110.5" />
+      <point x="12848.737781141212" y="34469.0" />
+      <point x="12780.932225585657" y="34469.0" />
+      <point x="12780.932225585657" y="14949.0" />
+      <point x="12643.910003363435" y="14949.0" />
+      <point x="69.86666666666679" y="70.5" />
+    </edge>
+    <edge source="papeleriaconant.Clientes" target="javax.swing.JFrame">
+      <point x="-116.66666666666606" y="-110.5" />
+      <point x="12770.960003363434" y="34489.0" />
+      <point x="8865.077507107848" y="34489.0" />
+      <point x="8865.077507107848" y="33931.0" />
+      <point x="8793.476587990202" y="33931.0" />
+      <point x="184.05882352941262" y="500.5" />
+    </edge>
+    <edge source="papeleriaconant.Main" target="papeleriaconant.Clientes">
+      <point x="73.77499999999964" y="-45.0" />
+      <point x="8900.352507107847" y="35032.0" />
+      <point x="12756.3766700301" y="35032.0" />
+      <point x="-131.25" y="110.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component.BltBufferStrategy">
+      <point x="247.09821428571468" y="-5037.5" />
+      <point x="6846.930859698885" y="22039.0" />
+      <point x="9623.821184346649" y="22039.0" />
+      <point x="36.41666666666697" y="240.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="javax.swing.JFrame">
+      <point x="-210.3529411764706" y="500.5" />
+      <point x="8399.06482328432" y="33728.0" />
+      <point x="8365.91776446079" y="33728.0" />
+      <point x="8365.91776446079" y="33207.5" />
+      <point x="-223.5" y="-0.0" />
+    </edge>
+    <edge source="papeleriaconant.EsUnUsuario" target="java.awt.Window">
+      <point x="-230.5882352941171" y="-188.5" />
+      <point x="6288.744410119053" y="36096.0" />
+      <point x="1436.572771648238" y="36096.0" />
+      <point x="1436.572771648238" y="14889.0" />
+      <point x="3034.811660537127" y="14889.0" />
+      <point x="-169.39999999999964" y="1995.5" />
+    </edge>
+    <edge source="papeleriaconant.Ticket" target="papeleriaconant.VentasProducidas">
+      <point x="126.65625" y="-188.5" />
+      <point x="11128.840802722603" y="35222.0" />
+      <point x="13653.685333588764" y="35222.0" />
+      <point x="13653.685333588764" y="34619.0" />
+      <point x="13696.776242679673" y="34619.0" />
+      <point x="0.0" y="214.0" />
+    </edge>
+    <edge source="java.awt.Container.WakingRunnable" target="java.awt.Container">
+      <point x="52.0" y="45.0" />
+      <point x="6674.52014541317" y="18040.0" />
+      <point x="5842.813492063491" y="18040.0" />
+      <point x="132.75" y="-1839.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component.FlipSubRegionBufferStrategy">
+      <point x="90.40178571428623" y="-5037.5" />
+      <point x="6690.234431127456" y="21909.0" />
+      <point x="7259.417658730158" y="21909.0" />
+      <point x="-131.25" y="58.0" />
+    </edge>
+    <edge source="java.awt.Frame" target="java.awt.Frame.AccessibleAWTFrame">
+      <point x="-164.39999999999964" y="-786.5" />
+      <point x="3930.661491458672" y="7160.0" />
+      <point x="3914.944824792005" y="7160.0" />
+      <point x="0.0" y="58.0" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="javax.swing.RootPaneContainer">
+      <point x="-291.78947368421086" y="-2346.5" />
+      <point x="10450.918775293258" y="2257.0" />
+      <point x="8709.543336696766" y="2257.0" />
+      <point x="150.0" y="109.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component.BltSubRegionBufferStrategy">
+      <point x="259.1517857142853" y="-5037.5" />
+      <point x="6858.9844311274555" y="22049.0" />
+      <point x="9763.321184346649" y="22049.0" />
+      <point x="-129.0" y="58.0" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="javax.accessibility.Accessible">
+      <point x="208.60000000000036" y="-500.5" />
+      <point x="8818.01776446079" y="32534.0" />
+      <point x="13379.14234062093" y="32534.0" />
+      <point x="13379.14234062093" y="373.0" />
+      <point x="9819.537851013316" y="373.0" />
+      <point x="154.125" y="31.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="java.beans.JavaBean">
+      <point x="280.0" y="-643.5" />
+      <point x="6615.33264541317" y="32514.0" />
+      <point x="13312.26734062093" y="32514.0" />
+      <point x="13312.26734062093" y="2307.0" />
+      <point x="13124.961785065374" y="2307.0" />
+      <point x="33.75" y="57.5" />
+    </edge>
+    <edge source="papeleriaconant.ReporteDeVentas" target="javax.swing.JFrame">
+      <point x="-127.42857142857065" y="-136.5" />
+      <point x="11966.740764790766" y="34519.0" />
+      <point x="8843.077507107848" y="34519.0" />
+      <point x="8843.077507107848" y="33951.0" />
+      <point x="8740.888352696084" y="33951.0" />
+      <point x="131.4705882352937" y="500.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="javax.swing.JDialog.AccessibleJDialog">
+      <point x="-140.0" y="-643.5" />
+      <point x="6195.33264541317" y="32494.0" />
+      <point x="1140.4964120935929" y="32494.0" />
+      <point x="1140.4964120935929" y="18100.0" />
+      <point x="1307.822771648238" y="18100.0" />
+      <point x="107.25" y="58.0" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.JDesktopIcon" target="java.awt.Component">
+      <point x="182.66666666666652" y="162.5" />
+      <point x="11245.834431127456" y="14789.0" />
+      <point x="11403.977101370852" y="14789.0" />
+      <point x="11403.977101370852" y="22119.0" />
+      <point x="6931.305859698885" y="22119.0" />
+      <point x="331.4732142857147" y="-5037.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="javax.swing.JComponent">
+      <point x="59.600000000000364" y="-500.5" />
+      <point x="8669.01776446079" y="32444.0" />
+      <point x="11774.16776446079" y="32444.0" />
+      <point x="11774.16776446079" y="7090.0" />
+      <point x="11070.971406872206" y="7090.0" />
+      <point x="328.26315789473665" y="2346.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="java.awt.Window">
+      <point x="-208.60000000000036" y="-500.5" />
+      <point x="8400.81776446079" y="32364.0" />
+      <point x="3277.4295176799824" y="32364.0" />
+      <point x="72.60000000000036" y="1995.5" />
+    </edge>
+    <edge source="papeleriaconant.VentasProducidas" target="java.io.Serializable">
+      <point x="0.0" y="-214.0" />
+      <point x="13696.776242679673" y="33941.0" />
+      <point x="13546.864562843153" y="33941.0" />
+      <point x="13546.864562843153" y="75.0" />
+      <point x="2348.7116605371266" y="75.0" />
+      <point x="53.44444444444525" y="17.5" />
+    </edge>
+    <edge source="papeleriaconant.AgregarClientes" target="javax.swing.JInternalFrame">
+      <point x="-145.83333333333394" y="-110.5" />
+      <point x="12873.432225585655" y="33991.0" />
+      <point x="11233.115990259741" y="33991.0" />
+      <point x="11233.115990259741" y="18090.0" />
+      <point x="11297.143768037518" y="18090.0" />
+      <point x="192.66666666666697" y="1475.5" />
+    </edge>
+    <edge source="java.awt.Component" target="javax.accessibility.Accessible">
+      <point x="150.66964285714312" y="-5037.5" />
+      <point x="6750.502288270313" y="21959.0" />
+      <point x="8362.06498015873" y="21959.0" />
+      <point x="8362.06498015873" y="8883.0" />
+      <point x="8815.293336696766" y="8883.0" />
+      <point x="8815.293336696766" y="7160.0" />
+      <point x="9150.709431127456" y="7160.0" />
+      <point x="9150.709431127456" y="2307.0" />
+      <point x="9318.209431127456" y="2307.0" />
+      <point x="9318.209431127456" y="393.0" />
+      <point x="9648.287851013316" y="393.0" />
+      <point x="-17.125" y="31.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component">
+      <point x="-270.0" y="5037.5" />
+      <point x="6329.83264541317" y="32264.0" />
+      <point x="6242.33264541317" y="32264.0" />
+      <point x="6242.33264541317" y="27206.5" />
+      <point x="-337.5" y="-0.0" />
+    </edge>
+    <edge source="java.awt.Container.EventTargetFilter" target="java.awt.Component">
+      <point x="119.57142857142844" y="31.5" />
+      <point x="5765.7066240154345" y="14929.0" />
+      <point x="6737.02014541317" y="14929.0" />
+      <point x="6737.02014541317" y="21839.0" />
+      <point x="6605.8594311274555" y="21839.0" />
+      <point x="6.0267857142853245" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Dialog" target="java.awt.Dialog">
+      <point x="-188.67857142857156" y="747.5" />
+      <point x="2327.074755775221" y="10468.0" />
+      <point x="2182.2533272037927" y="10468.0" />
+      <point x="2182.2533272037927" y="9182.166666666668" />
+      <point x="-293.5" y="-498.3333333333321" />
+    </edge>
+    <edge source="java.awt.Dialog.ModalExclusionType" target="java.awt.Dialog">
+      <point x="44.875" y="84.0" />
+      <point x="2423.1994811582917" y="8863.0" />
+      <point x="2515.7533272037927" y="8863.0" />
+      <point x="0.0" y="-747.5" />
+    </edge>
+    <edge source="java.awt.Container.AccessibleAWTContainer" target="java.awt.Component.AccessibleAWTComponent">
+      <point x="-210.375" y="-110.5" />
+      <point x="5139.812956743948" y="1604.0" />
+      <point x="1679.9147882703137" y="1604.0" />
+      <point x="224.39999999999964" y="565.5" />
+    </edge>
+    <edge source="java.awt.Container" target="java.awt.Window">
+      <point x="-191.75" y="-1839.5" />
+      <point x="5518.313492063491" y="18050.0" />
+      <point x="3321.4295176799824" y="18050.0" />
+      <point x="3321.4295176799824" y="14949.0" />
+      <point x="3373.611660537126" y="14949.0" />
+      <point x="169.39999999999964" y="1995.5" />
+    </edge>
+    <edge source="papeleriaconant.Ticket" target="papeleriaconant.Main">
+      <point x="-54.28125" y="-188.5" />
+      <point x="10947.903302722603" y="35202.0" />
+      <point x="8769.827507107848" y="35202.0" />
+      <point x="-56.75" y="45.0" />
+    </edge>
+    <edge source="java.awt.Component.BltBufferStrategy" target="java.awt.Component">
+      <point x="-36.41666666666697" y="240.5" />
+      <point x="9550.987851013315" y="18070.0" />
+      <point x="9486.612851013317" y="18070.0" />
+      <point x="9486.612851013317" y="22029.0" />
+      <point x="6834.877288270313" y="22029.0" />
+      <point x="235.04464285714312" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component.DummyRequestFocusController">
+      <point x="-174.77678571428623" y="-5037.5" />
+      <point x="6425.055859698884" y="22009.0" />
+      <point x="4761.396825396824" y="22009.0" />
+      <point x="-233.66666666666697" y="31.5" />
+    </edge>
+    <edge source="java.awt.Dialog.ModalExclusionType" target="java.io.Serializable">
+      <point x="0.0" y="-84.0" />
+      <point x="2378.3244811582917" y="135.0" />
+      <point x="2299.3783272037927" y="135.0" />
+      <point x="4.111111111111313" y="17.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.AccessibleJInternalFrame" target="javax.swing.JInternalFrame">
+      <point x="0.0" y="123.0" />
+      <point x="11498.66776446079" y="14809.0" />
+      <point x="11170.15891955267" y="14809.0" />
+      <point x="65.68181818181802" y="-1475.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.KeyboardState" target="java.io.Serializable">
+      <point x="110.66666666666697" y="-97.0" />
+      <point x="11686.677547223084" y="1931.0" />
+      <point x="13401.14234062093" y="1931.0" />
+      <point x="13401.14234062093" y="95.0" />
+      <point x="2332.2672160926813" y="95.0" />
+      <point x="37.0" y="17.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.JDesktopIcon.AccessibleJDesktopIcon" target="javax.swing.JComponent.AccessibleJComponent">
+      <point x="0.0" y="-110.0" />
+      <point x="9959.109431127456" y="8873.0" />
+      <point x="9624.309431127456" y="8873.0" />
+      <point x="117.40000000000009" y="214.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Component.BaselineResizeBehavior">
+      <point x="-307.36607142857156" y="-5037.5" />
+      <point x="6292.466573984599" y="22119.0" />
+      <point x="155.55555555555566" y="22119.0" />
+      <point x="155.55555555555566" y="2317.0" />
+      <point x="215.72222222222263" y="2317.0" />
+      <point x="0.0" y="97.0" />
+    </edge>
+    <edge source="java.awt.Container.MouseEventTargetFilter" target="java.awt.Container">
+      <point x="34.875" y="45.0" />
+      <point x="5858.395145413171" y="17990.0" />
+      <point x="5695.313492063491" y="17990.0" />
+      <point x="-14.75" y="-1839.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent" target="java.awt.Component.AccessibleAWTComponent.AccessibleAWTFocusHandler">
+      <point x="-46.75" y="-565.5" />
+      <point x="1408.764788270314" y="403.0" />
+      <point x="1323.389788270314" y="403.0" />
+      <point x="0.0" y="58.0" />
+    </edge>
+    <edge source="javax.swing.JFrame.AccessibleJFrame" target="java.awt.Frame">
+      <point x="143.0" y="-58.0" />
+      <point x="3791.14618434665" y="14969.0" />
+      <point x="3910.685470060935" y="14969.0" />
+      <point x="3910.685470060935" y="8903.0" />
+      <point x="4109.740062887242" y="8903.0" />
+      <point x="14.678571428570649" y="786.5" />
+    </edge>
+    <edge source="java.awt.Component.AccessibleAWTComponent" target="java.io.Serializable">
+      <point x="140.25" y="-565.5" />
+      <point x="1595.764788270314" y="403.0" />
+      <point x="1574.1536771592027" y="403.0" />
+      <point x="1574.1536771592027" y="125.0" />
+      <point x="2282.9338827593474" y="125.0" />
+      <point x="-12.33333333333394" y="17.5" />
+    </edge>
+    <edge source="papeleriaconant.EsUnUsuario" target="java.awt.Frame">
+      <point x="-57.64705882352973" y="-188.5" />
+      <point x="6461.6855865896405" y="36036.0" />
+      <point x="3957.185470060935" y="36036.0" />
+      <point x="3957.185470060935" y="8913.0" />
+      <point x="4139.097205744385" y="8913.0" />
+      <point x="44.035714285713766" y="786.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="java.awt.Container">
+      <point x="-128.44444444444434" y="1475.5" />
+      <point x="10976.032656926407" y="18100.0" />
+      <point x="6019.813492063491" y="18100.0" />
+      <point x="309.75" y="-1839.5" />
+    </edge>
+    <edge source="javax.swing.JDialog" target="java.awt.Dialog">
+      <point x="-245.0" y="-643.5" />
+      <point x="6090.33264541317" y="32524.0" />
+      <point x="942.5727716482379" y="32524.0" />
+      <point x="942.5727716482379" y="10648.0" />
+      <point x="2369.0033272037927" y="10648.0" />
+      <point x="-146.75" y="747.5" />
+    </edge>
+    <edge source="java.awt.Container" target="java.awt.Container.MouseEventTargetFilter">
+      <point x="-44.25" y="-1839.5" />
+      <point x="5665.813492063491" y="17980.0" />
+      <point x="5788.645145413171" y="17980.0" />
+      <point x="-34.875" y="45.0" />
+    </edge>
+    <edge source="java.awt.Container" target="java.awt.Container.WakingRunnable">
+      <point x="103.25" y="-1839.5" />
+      <point x="5813.313492063491" y="18030.0" />
+      <point x="6570.52014541317" y="18030.0" />
+      <point x="-52.0" y="45.0" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Container">
+      <point x="-138.61607142857156" y="-5037.5" />
+      <point x="6461.216573984599" y="21979.0" />
+      <point x="5612.713492063491" y="21979.0" />
+      <point x="-97.35000000000036" y="1839.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.IntVector" target="javax.swing.JComponent">
+      <point x="-37.125" y="123.5" />
+      <point x="11385.302547223084" y="1931.0" />
+      <point x="11379.510880556416" y="1931.0" />
+      <point x="11379.510880556416" y="2267.0" />
+      <point x="10888.602985819572" y="2267.0" />
+      <point x="145.89473684210498" y="-2346.5" />
+    </edge>
+    <edge source="java.awt.Component.DummyRequestFocusController" target="java.awt.Component">
+      <point x="0.0" y="31.5" />
+      <point x="4995.063492063491" y="21999.0" />
+      <point x="6437.1094311274555" y="21999.0" />
+      <point x="-162.72321428571468" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.Window">
+      <point x="-210.9375" y="-5037.5" />
+      <point x="6388.89514541317" y="22039.0" />
+      <point x="3310.4295176799824" y="22039.0" />
+      <point x="3310.4295176799824" y="14939.0" />
+      <point x="3349.4116605371273" y="14939.0" />
+      <point x="145.20000000000073" y="1995.5" />
+    </edge>
+    <edge source="papeleriaconant.Persona" target="java.io.Serializable">
+      <point x="0.0" y="-149.0" />
+      <point x="13806.114562843153" y="65.0" />
+      <point x="2356.9338827593474" y="65.0" />
+      <point x="61.66666666666606" y="17.5" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="javax.swing.TransferHandler.HasGetTransferHandler">
+      <point x="255.31578947368416" y="-2346.5" />
+      <point x="10998.024038451153" y="2297.0" />
+      <point x="12085.876670030102" y="2297.0" />
+      <point x="-125.66666666666606" y="31.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="javax.swing.WindowConstants">
+      <point x="249.590909090909" y="-1475.5" />
+      <point x="11354.06801046176" y="14879.0" />
+      <point x="12469.243336696767" y="14879.0" />
+      <point x="-104.79999999999927" y="70.5" />
+    </edge>
+    <edge source="java.awt.Component" target="java.awt.MenuContainer">
+      <point x="126.5625" y="-5037.5" />
+      <point x="6726.39514541317" y="21939.0" />
+      <point x="8068.56498015873" y="21939.0" />
+      <point x="8068.56498015873" y="7160.0" />
+      <point x="7964.06498015873" y="7160.0" />
+      <point x="72.0" y="57.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame" target="javax.accessibility.Accessible">
+      <point x="197.04545454545496" y="-1475.5" />
+      <point x="11301.522555916306" y="14859.0" />
+      <point x="11752.16776446079" y="14859.0" />
+      <point x="11752.16776446079" y="10678.0" />
+      <point x="12421.543336696766" y="10678.0" />
+      <point x="12421.543336696766" y="393.0" />
+      <point x="9751.037851013316" y="393.0" />
+      <point x="85.625" y="31.5" />
+    </edge>
+    <edge source="java.awt.Component.SingleBufferStrategy" target="java.awt.Component">
+      <point x="157.125" y="97.0" />
+      <point x="6441.188492063491" y="21889.0" />
+      <point x="6569.698716841742" y="21889.0" />
+      <point x="-30.13392857142844" y="-5037.5" />
+    </edge>
+    <edge source="javax.swing.JFrame" target="javax.swing.WindowConstants">
+      <point x="119.20000000000073" y="-500.5" />
+      <point x="8728.61776446079" y="32494.0" />
+      <point x="12487.1266700301" y="32494.0" />
+      <point x="12487.1266700301" y="14909.0" />
+      <point x="12521.643336696769" y="14909.0" />
+      <point x="-52.399999999999636" y="70.5" />
+    </edge>
+    <edge source="java.awt.Container.AccessibleAWTContainer.AccessibleContainerHandler" target="java.io.Serializable">
+      <point x="-96.25" y="-58.0" />
+      <point x="7324.099778777339" y="115.0" />
+      <point x="2315.822771648236" y="115.0" />
+      <point x="20.555555555554747" y="17.5" />
+    </edge>
+    <edge source="javax.swing.JComponent" target="javax.swing.JComponent.ActionStandin">
+      <point x="36.473684210526244" y="-2346.5" />
+      <point x="10779.181933187994" y="2237.0" />
+      <point x="11018.385880556416" y="2237.0" />
+      <point x="-70.125" y="123.0" />
+    </edge>
+    <edge source="java.awt.Component.FlipBufferStrategy" target="java.awt.Component">
+      <point x="-129.25" y="266.5" />
+      <point x="7099.77014541317" y="18040.0" />
+      <point x="7095.667658730158" y="18040.0" />
+      <point x="7095.667658730158" y="21879.0" />
+      <point x="6654.073716841742" y="21879.0" />
+      <point x="54.24107142857156" y="-5037.5" />
+    </edge>
+    <edge source="java.awt.Component.FlipBufferStrategy" target="java.awt.Component.FlipBufferStrategy">
+      <point x="-215.41666666666669" y="266.5" />
+      <point x="7013.603478746503" y="16751.0" />
+      <point x="6950.52014541317" y="16751.0" />
+      <point x="6950.52014541317" y="16464.5" />
+      <point x="-258.5" y="-0.0" />
+    </edge>
+    <edge source="papeleriaconant.Ticket" target="java.awt.Window">
+      <point x="-162.84375" y="-188.5" />
+      <point x="10839.340802722603" y="35232.0" />
+      <point x="2002.572771648238" y="35232.0" />
+      <point x="2002.572771648238" y="14909.0" />
+      <point x="3083.2116605371266" y="14909.0" />
+      <point x="-121.0" y="1995.5" />
+    </edge>
+    <edge source="papeleriaconant.EsUnUsuario" target="javax.swing.JDialog">
+      <point x="0.0" y="-188.5" />
+      <point x="6519.33264541317" y="33961.0" />
+      <point x="6573.33264541317" y="33961.0" />
+      <point x="238.0" y="643.5" />
+    </edge>
+    <edge source="javax.swing.JInternalFrame.JDesktopIcon" target="javax.swing.JInternalFrame">
+      <point x="137.0" y="162.5" />
+      <point x="11200.16776446079" y="14789.0" />
+      <point x="11117.613465007216" y="14789.0" />
+      <point x="13.136363636363512" y="-1475.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.AccessibleJComponent.AccessibleFocusHandler" target="java.awt.Component">
+      <point x="-76.5" y="-58.0" />
+      <point x="7597.131752556028" y="32374.0" />
+      <point x="6599.83264541317" y="32374.0" />
+      <point x="0.0" y="5037.5" />
+    </edge>
+    <edge source="java.awt.Component.BltSubRegionBufferStrategy" target="java.awt.Component.BltBufferStrategy">
+      <point x="129.0" y="-58.0" />
+      <point x="10021.321184346649" y="18070.0" />
+      <point x="9769.487851013315" y="18070.0" />
+      <point x="182.08333333333303" y="240.5" />
+    </edge>
+    <edge source="javax.swing.JComponent.AccessibleJComponent" target="javax.swing.JComponent.AccessibleJComponent">
+      <point x="-234.79999999999995" y="214.5" />
+      <point x="9272.109431127456" y="8201.0" />
+      <point x="9193.409431127457" y="8201.0" />
+      <point x="9193.409431127457" y="7966.5" />
+      <point x="-293.5" y="-0.0" />
+    </edge>
+    <edge source="java.awt.Container" target="java.awt.Component">
+      <point x="32.44999999999982" y="1839.5" />
+      <point x="5742.513492063492" y="21959.0" />
+      <point x="6485.323716841742" y="21959.0" />
+      <point x="-114.50892857142844" y="-5037.5" />
+    </edge>
+    <edge source="papeleriaconant.InserteUnUsuario" target="javax.swing.JFrame">
+      <point x="-94.46153846153902" y="-123.5" />
+      <point x="10938.117245030295" y="35699.0" />
+      <point x="8559.874382107848" y="35699.0" />
+      <point x="8559.874382107848" y="33941.0" />
+      <point x="8583.12364681373" y="33941.0" />
+      <point x="-26.294117647059466" y="500.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.45378502718527813" x="12060.024884792627" y="35826.726728110596" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>protected</VISIBILITY>
+</Diagram>
+
