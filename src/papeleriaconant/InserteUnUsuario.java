@@ -39,11 +39,13 @@ public class InserteUnUsuario extends javax.swing.JFrame {
      * Creates new form InserteUnUsuario
      */
     public InserteUnUsuario() {
+        super("Inserte un usuario frame");
         initComponents();
         leerlista();
 
     }
     public InserteUnUsuario(ArrayList<Producto> ProductosCompradoPorElUsuario){
+        super("Inserte un usuario frame");
         initComponents();
         leerlista();
         setListaProductosCompradsPorElUsuario(ProductosCompradoPorElUsuario);
@@ -134,9 +136,7 @@ public class InserteUnUsuario extends javax.swing.JFrame {
 
 
 
-    private void enviarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviarBtnActionPerformed
-        // TODO add your handling code here
-        System.out.println("Hola");
+    private void enviarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviarBtnActionPerforme{
         boolean bandera = false;
         String Ids;
         Usuarios usuarioConIdValido = new Usuarios();

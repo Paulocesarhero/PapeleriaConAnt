@@ -5,7 +5,10 @@
  */
 package papeleriaconant;
 
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -14,6 +17,7 @@ import java.util.ArrayList;
 public class Ticket extends javax.swing.JFrame {
     private Usuarios persona = new Usuarios();
     private ArrayList<Producto> productosCompradosPorElUSuario = new ArrayList<Producto>();
+
 
     public Usuarios getPersona() {
         return persona;
@@ -39,6 +43,7 @@ public class Ticket extends javax.swing.JFrame {
     }
 
     public Ticket(Usuarios per, ArrayList<Producto> productosComprados){
+        super("Ticket frame");
         initComponents();
         setPersona(per);
         setProductosCompradosPorElUSuario(productosComprados);
@@ -48,9 +53,8 @@ public class Ticket extends javax.swing.JFrame {
     }
     public void imprimirElTicket(){
         String usuario,productos = "";
-        for (Producto Ps:
-                productosCompradosPorElUSuario) {
-            productos += "\nNombre delProducto "+Ps.getNombreDelProducto()+ "\n Id " + Ps.getIdProducto() + "\n" + " \n Cantidad " + Ps.getCantidad() + "\nPrecio unitario " + Ps.getPrecioUnitario() ;
+        for (Producto Ps: productosCompradosPorElUSuario) {
+            productos += "\nNombre del Producto "+Ps.getNombreDelProducto()+ "\n Id " + Ps.getIdProducto() + "\n" + " \n Cantidad " + Ps.getCantidad() + "\n Precio unitario " + Ps.getPrecioUnitario() ;
         }
         usuario = "Persona "+persona.getNombre()+" "+persona.getApellido()+ " Id " +persona.getIdCliente();
 
@@ -58,11 +62,25 @@ public class Ticket extends javax.swing.JFrame {
     }
     public double cacularTotal(){
         double suma= 0;
+
         for (Producto Ps:productosCompradosPorElUSuario){
             Ps.getCantidad();
             suma += (Ps.getCantidad()) * (Ps.getPrecioUnitario());
         }
         return suma;
+    }
+    public void escribirVenta(VentasProducidas vp ){
+        try {
+            ObjectOutputStream escribiendoFichero = new ObjectOutputStream(
+                    new FileOutputStream("data/ventas.obj"));
+            escribiendoFichero.writeObject(vp);
+            escribiendoFichero.close();
+
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+
+        }
     }
 
     /**
@@ -78,7 +96,7 @@ public class Ticket extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         ticketTxt = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
-        impriirTicketBtn = new javax.swing.JButton();
+        okBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -89,10 +107,10 @@ public class Ticket extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Su ticket");
 
-        impriirTicketBtn.setText("Imprimir ticket");
-        impriirTicketBtn.addActionListener(new java.awt.event.ActionListener() {
+        okBtn.setText("Ok");
+        okBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                impriirTicketBtnActionPerformed(evt);
+                okBtnActionPerformed(evt);
             }
         });
 
@@ -107,7 +125,7 @@ public class Ticket extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(88, 88, 88)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(impriirTicketBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(okBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 436, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(97, Short.MAX_VALUE))
         );
@@ -119,7 +137,7 @@ public class Ticket extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
-                .addComponent(impriirTicketBtn)
+                .addComponent(okBtn)
                 .addGap(19, 19, 19))
         );
 
@@ -137,9 +155,34 @@ public class Ticket extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void impriirTicketBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_impriirTicketBtnActionPerformed
+    private void okBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_impriirTicketBtnActionPerformed
+        Date fechaProducidaPorLaCompraConUsuario = new Date();
+        VentasProducidas vP = new VentasProducidas(fechaProducidaPorLaCompraConUsuario.getDay(),fechaProducidaPorLaCompraConUsuario.getMonth(),
+                fechaProducidaPorLaCompraConUsuario.getYear(), fechaProducidaPorLaCompraConUsuario.getHours(),nombreProductosVendidos(), numeroDePiezasVendidas(),cacularTotal());
+        escribirVenta(vP);
+        this.setVisible(false);
+        Main menu = new Main();
+        menu.setVisible(true);
+    }//GEN-LAST:event_okBtnActionPerformed
+
+    private String numeroDePiezasVendidas() {
+        String resultado = "";
+        for (Producto pod:productosCompradosPorElUSuario) {
+            resultado +=" , " + String.valueOf(pod.getCantidad());
+
+        }
+        return resultado;
+    }
+
+    private String nombreProductosVendidos() {
+        String resultado = "";
+        for (Producto pod:productosCompradosPorElUSuario) {
+            resultado +=" , " + pod.getNombreDelProducto();
+
+        }
+        return resultado;
+    }
 
     /**
      * @param args the command line arguments
@@ -178,10 +221,10 @@ public class Ticket extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton impriirTicketBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton okBtn;
     private javax.swing.JTextArea ticketTxt;
     // End of variables declaration//GEN-END:variables
 }

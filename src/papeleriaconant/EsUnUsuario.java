@@ -6,7 +6,10 @@
 package papeleriaconant;
 
 import javax.swing.*;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -36,6 +39,46 @@ public class EsUnUsuario extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         setListaPro(listaMetodo);
+    }
+
+    public double cacularTotal(){
+        double suma= 0;
+
+        for (Producto Ps:listaPro){
+            Ps.getCantidad();
+            suma += (Ps.getCantidad()) * (Ps.getPrecioUnitario());
+        }
+        return suma;
+    }
+    public void escribirVenta(VentasProducidas vp ){
+        try {
+            ObjectOutputStream escribiendoFichero = new ObjectOutputStream(
+                    new FileOutputStream("data/ventas.obj"));
+            escribiendoFichero.writeObject(vp);
+            escribiendoFichero.close();
+
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+
+        }
+    }
+
+    public String nombreProductosVendidos(){
+        String resultado = "";
+        for (Producto pod:listaPro) {
+            resultado +=" , " + pod.getNombreDelProducto();
+
+        }
+        return resultado;
+    }
+    public String numeroDePiezasVendidas(){
+        String resultado = "";
+        for (Producto pod:listaPro) {
+            resultado +=" , " + String.valueOf(pod.getCantidad());
+
+        }
+        return resultado;
     }
 
     /**
@@ -111,6 +154,10 @@ public class EsUnUsuario extends javax.swing.JDialog {
 
     private void noBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noBtnActionPerformed
         // TODO add your handling code here:
+        Date fechaActualDelNo = new Date();
+        VentasProducidas ventaProducidaSinUsuario = new VentasProducidas(fechaActualDelNo.getDay(),fechaActualDelNo.getMonth(),
+                fechaActualDelNo.getYear(), fechaActualDelNo.getHours(),nombreProductosVendidos(), numeroDePiezasVendidas(),cacularTotal());
+        escribirVenta(ventaProducidaSinUsuario);
         this.setVisible(false);
         JOptionPane.showMessageDialog(this, "Su compra se realizo con exito");
     }//GEN-LAST:event_noBtnActionPerformed

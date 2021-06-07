@@ -28,10 +28,6 @@ public class Producto implements Serializable{
         this.cantidad = cantidad;
         this.precioUnitario = precioUnitario;
     }
-//    public Producto getCloneInstance(){
-//        Producto p = new Producto(this.nombreDelCatalogo,this.nombreDelProducto,this.idProducto,this.descripcion,this.cantidad,this.precioUnitario);
-//        return p;
-//    }
 
     public String getNombreDelProducto() {
         return nombreDelProducto;

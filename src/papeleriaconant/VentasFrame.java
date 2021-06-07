@@ -26,6 +26,7 @@ public class VentasFrame extends javax.swing.JFrame {
      * Creates new form VentasFrame
      */
     public VentasFrame() {
+        super("Ventas frame");
         initComponents();
         setModelo();
 
@@ -253,8 +254,9 @@ public class VentasFrame extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Ya no hay articulos en existencia");
             } else {
                 Producto aux = listaCatalogos.get(productosVentaTbl.getSelectedRow());
+                Producto newInstance = new Producto(aux.getNombreDelCatalogo(), aux.getNombreDelProducto(), aux.getIdProducto(), aux.getDescripcion(), aux.getCantidad(), aux.getPrecioUnitario());
 
-                Piezas preguntarCuantasPiezas = new Piezas(this, true, aux);
+                Piezas preguntarCuantasPiezas = new Piezas(this, true, newInstance);
 
                 preguntarCuantasPiezas.setVisible(true);
 
@@ -267,7 +269,7 @@ public class VentasFrame extends javax.swing.JFrame {
 
 
                 //Eliminamos los productosSeleccionados de la lista del catalogo
-                int resta = (enStock) - (aux.getCantidad());
+                int resta = (enStock) - (newInstance.getCantidad());
                 Producto productoReducidoPorElUSuario = listaCatalogos.get(productosVentaTbl.getSelectedRow());
                 productoReducidoPorElUSuario.setCantidad(resta);
                 listaCatalogos.set(productosVentaTbl.getSelectedRow(), productoReducidoPorElUSuario);
@@ -341,6 +343,7 @@ public class VentasFrame extends javax.swing.JFrame {
         } else {
             EsUnUsuario eUU = new EsUnUsuario(this, true,listaCarrito);
             eUU.setVisible(true);
+            this.setVisible(false);
 
         }
     }//GEN-LAST:event_realizarCompraBtnActionPerformed
